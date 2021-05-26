@@ -12,13 +12,13 @@ import Cinotify
 
 /// An event sent by inotify.
 public struct InotifyEvent: Equatable {
-    /// The filepath of the event.
-    public let path: FilePath
+    /// The file path of the event. If nil, the event is not for a file inside of the watch.
+    public let path: FilePath?
     /// The flags of the event.
     public let flags: Flags
 
     init(cEvent event: cinotify_event) {
-        path = FilePath(cString: cin_event_name(event))
+        path = cin_event_name(event).map { FilePath(cString: $0) }
         flags = .init(rawValue: event.mask)
     }
 }

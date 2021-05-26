@@ -10,7 +10,7 @@ static inline const char* cin_event_name(cinotify_event event) {
 	if (event.len)
 		return event.name;
 	else
-		return '\0';
+		return null;
 }
 
 static const uint32_t cin_all_events = IN_ALL_EVENTS;
