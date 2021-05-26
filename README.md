@@ -1,3 +1,3 @@
-# swift-inotify
+# Inotify
 
-A description of this package.
+A Swift wrapper around `inotify` on Linux.
