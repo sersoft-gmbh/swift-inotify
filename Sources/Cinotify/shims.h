@@ -1,6 +1,7 @@
 #ifndef CINOTIFY_SHIMS_H
 #define CINOTIFY_SHIMS_H
 
+#include <stdio.h>
 #include <stdint.h>
 #include <sys/inotify.h>
 
@@ -10,7 +11,7 @@ static inline const char* cin_event_name(cinotify_event event) {
 	if (event.len)
 		return event.name;
 	else
-		return null;
+		return NULL;
 }
 
 static const uint32_t cin_all_events = IN_ALL_EVENTS;
