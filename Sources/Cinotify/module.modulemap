@@ -1,0 +1,3 @@
+module Cinotify [system] {
+  umbrella header "shims.h"
+}
