@@ -1,3 +1,8 @@
+#if os(Linux)
+import Glibc
+#else
+import Darwin.C
+#endif
 import SystemPackage
 #if swift(>=5.4)
 @_implementationOnly import Cinotify
