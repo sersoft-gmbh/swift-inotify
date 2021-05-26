@@ -1,0 +1,7 @@
+coverage:
+  range: 70..95
+  round: nearest
+  precision: 2
+
+ignore:
+  - "Tests"

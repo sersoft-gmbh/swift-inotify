@@ -1,0 +1,39 @@
+name: Release Processing
+
+on:
+  release:
+    types:
+      - published
+      - updated
+
+jobs:
+  publish-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - if: runner.os == 'macOS'
+        uses: maxim-lobanov/setup-xcode@v1.2.3
+        with:
+          xcode-version: ^12.4
+      - name: Install Swift
+        if: runner.os == 'Linux'
+        uses: sersoft-gmbh/SwiftyActions@v1.1.1
+        with:
+          release-version: ${{matrix.swift-version}}
+      - uses: dawidd6/action-get-tag@v1
+        id: get-tag
+      - uses: actions/checkout@v2.3.4
+      - uses: actions/cache@v2.1.5
+        with:
+          path: .build
+          key: ${{runner.os}}-${{github.repository}}-spm-${{hashFiles('**/Package.resolved')}}
+          restore-keys: |
+            ${{runner.os}}-${{github.repository}}-spm-
+      - uses: sersoft-gmbh/swifty-docs-action@v1.2.0
+        with:
+          module-version: ${{steps.get-tag.outputs.tag}}
+          output: docs
+      - uses: crazy-max/ghaction-github-pages@v2.4.1
+        with:
+          build_dir: docs
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
