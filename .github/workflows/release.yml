@@ -22,7 +22,7 @@ jobs:
       - uses: dawidd6/action-get-tag@v1
         id: get-tag
       - uses: actions/checkout@v2.3.4
-      - uses: actions/cache@v2.1.5
+      - uses: actions/cache@v2.1.6
         with:
           path: .build
           key: ${{runner.os}}-${{github.repository}}-spm-${{hashFiles('**/Package.resolved')}}
