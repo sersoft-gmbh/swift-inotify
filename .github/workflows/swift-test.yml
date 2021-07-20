@@ -22,17 +22,21 @@ jobs:
           xcode-version: ^12.4
       - name: Install Swift
         if: runner.os == 'Linux'
-        uses: sersoft-gmbh/SwiftyActions@v1.2
+        uses: sersoft-gmbh/SwiftyActions@v1.3
         with:
           release-version: ${{matrix.swift-version}}
           platform: ${{matrix.os}}
+          github-token: ${{secrets.GITHUB_TOKEN}}
+      - name: Read Swift Version
+        id: swift-version
+        uses: sersoft-gmbh/swift-version-action@v1
       - uses: actions/checkout@v2.3.4
       - uses: actions/cache@v2.1.6
         with:
           path: .build
-          key: ${{runner.os}}-${{github.repository}}-spm-${{matrix.swift-version}}-${{hashFiles('**/Package.resolved')}}
+          key: ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-${{hashFiles('**/Package.resolved')}}
           restore-keys: |
-            ${{runner.os}}-${{github.repository}}-spm-${{matrix.swift-version}}-
+            ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-
       - name: Build & Test
         run: swift test -v --parallel --enable-code-coverage
       - name: Generate Coverage Files
@@ -43,6 +47,6 @@ jobs:
         run: llvm-cov export -format="lcov" .build/debug/*PackageTests.xctest -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
       - uses: codecov/codecov-action@v1.5.2
         with:
-            token: ${{secrets.CODECOV_TOKEN}}
-            file: coverage.lcov
-            fail_ci_if_error: true
+          token: ${{secrets.CODECOV_TOKEN}}
+          files: coverage.lcov
+          fail_ci_if_error: true
