@@ -19,6 +19,7 @@ jobs:
         uses: sersoft-gmbh/SwiftyActions@v1.3
         with:
           release-version: 5.4
+          github-token: ${{secrets.GITHUB_TOKEN}}
       - uses: dawidd6/action-get-tag@v1.0.0
         id: get-tag
       - name: Read Swift Version
