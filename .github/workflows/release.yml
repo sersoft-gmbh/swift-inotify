@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - if: runner.os == 'macOS'
-        uses: maxim-lobanov/setup-xcode@v1.2.3
+        uses: maxim-lobanov/setup-xcode@v1.3.0
         with:
           xcode-version: ^12.4
       - name: Install Swift
