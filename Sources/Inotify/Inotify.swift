@@ -51,7 +51,7 @@ public struct Inotify {
     /// The stream of events.
     let stream: FileStream<cinotify_event>
     /// The watches collection.
-    let watches = Watches()
+    let watches: Watches
 
     /// The underlying file descriptor of the stream.
     var fileDescriptor: FileDescriptor { stream.fileDescriptor }
@@ -59,17 +59,19 @@ public struct Inotify {
     /// Creates a new instance.
     public init() throws {
         guard case let fd = inotify_init1(0), fd != -1 else { throw Errno(rawValue: errno) }
-        stream = .init(fileDescriptor: .init(rawValue: fd)) { [watches] in
+        let _watches = Watches()
+        stream = .init(fileDescriptor: .init(rawValue: fd)) {
             // FIXME: Deal with connected events using `event.cookie`.
             let grouped = Dictionary(grouping: $0, by: \.wd).mapValues {
                 $0.map(InotifyEvent.init)
             }
-            watches.withWatches { watches in
+            _watches.withWatches { watches in
                 grouped.forEach { (wd, events) in
                     watches[wd]?.forEach { $0(with: events) }
                 }
             }
         }
+        watches = _watches
     }
 
     /// Closes this inotify instance. All further calls to this instance will fail.
