@@ -12,8 +12,11 @@ import FileStreamer
 import Cinotify
 #endif
 
+@available(*, deprecated, renamed: "Inotifier")
+public typealias Inotify = Inotifier
+
 /// The notifier object.
-public struct Inotify {
+public final class Inotifier { // FIXME: Make struct again once release builds don't crash with SIGSEGV!
     /// The callback that is called for read events.
     public typealias Callback = (FilePath, Array<InotifyEvent>) -> ()
 
@@ -27,7 +30,7 @@ public struct Inotify {
             /// The callback queue.
             let queue: DispatchQueue
             /// The callback closure.
-            let callback: Inotify.Callback
+            let callback: Inotifier.Callback
 
             func callAsFunction(with events: Array<InotifyEvent>) {
                 queue.async { callback(filePath, events) }
