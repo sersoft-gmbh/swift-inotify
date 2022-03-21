@@ -6,14 +6,7 @@ import Darwin.C
 import Dispatch
 import SystemPackage
 import FileStreamer
-#if swift(>=5.4)
-@_implementationOnly import Cinotify
-#else
-import Cinotify
-#endif
-
-@available(*, deprecated, renamed: "Inotifier")
-public typealias Inotify = Inotifier
+@_implementationOnly import CInotify
 
 /// The notifier object.
 public final class Inotifier { // FIXME: Make struct again once release builds don't crash with SIGSEGV!

@@ -4,11 +4,7 @@ import Glibc
 import Darwin.C
 #endif
 import SystemPackage
-#if swift(>=5.4)
-@_implementationOnly import Cinotify
-#else
-import Cinotify
-#endif
+@_implementationOnly import CInotify
 
 /// An event sent by inotify.
 public struct InotifyEvent: Equatable {
