@@ -50,7 +50,7 @@ jobs:
         id: coverage-files
         with:
           format: lcov
-      - uses: codecov/codecov-action@v2.1.0
+      - uses: codecov/codecov-action@v3.0.0
         with:
           token: ${{secrets.CODECOV_TOKEN}}
           files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
