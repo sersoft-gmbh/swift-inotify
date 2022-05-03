@@ -58,7 +58,7 @@ jobs:
       - name: Workaround Package.resolved format issues
         if: ${{ startsWith(steps.swift-version.outputs.version, '5.5') }}
         run: rm -rf Package.resolved
-      - uses: sersoft-gmbh/swifty-docs-action@v1.2.1
+      - uses: sersoft-gmbh/swifty-docs-action@v2.0.1
         with:
           module-version: ${{needs.check-release.outputs.tag}}
           output: docs
