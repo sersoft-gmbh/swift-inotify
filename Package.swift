@@ -2,6 +2,7 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
+import Foundation
 
 let package = Package(
     name: "swift-inotify",
@@ -42,3 +43,7 @@ let package = Package(
             dependencies: ["Inotify"]),
     ]
 )
+
+if ProcessInfo.processInfo.environment["ENABLE_DOCC_SUPPORT"] == "1" {
+    package.dependencies.append(.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"))
+}
