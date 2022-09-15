@@ -22,7 +22,7 @@ public struct InotifyEvent: Equatable {
 extension InotifyEvent {
     /// A set of flags that can be set on an event
     @frozen
-    public struct Flags: OptionSet {
+    public struct Flags: OptionSet, Hashable {
         /// inherited
         public typealias RawValue = UInt32
 
@@ -35,6 +35,11 @@ extension InotifyEvent {
         }
     }
 }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension InotifyEvent.Flags: Sendable {}
+extension InotifyEvent: @unchecked Sendable {} // unchecked because of FilePath
+#endif
 
 extension InotifyEvent.Flags {
     /// File was accessed.

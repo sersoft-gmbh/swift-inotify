@@ -113,3 +113,9 @@ public final class Inotifier { // FIXME: Make struct again once release builds d
         }
     }
 }
+
+#if compiler(>=5.5.2) && canImport(_Concurrency)
+extension Inotifier.Watch: Sendable {}
+extension Inotifier.Watches: @unchecked Sendable {} // unchecked because of manual locking
+extension Inotifier: @unchecked Sendable {} // unchecked because of FileStream, which we use in a Sendable-safe way
+#endif
