@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -9,10 +9,10 @@ let package = Package(
     platforms: [
         // These are necessary even though we don't support them.
         // The requirements are taken from swift-filestreamer.
-        .macOS(.v10_12),
-        .iOS(.v10),
-        .tvOS(.v10),
-        .watchOS(.v3),
+        .macOS(.v10_13),
+        .iOS(.v11),
+        .tvOS(.v11),
+        .watchOS(.v4),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
