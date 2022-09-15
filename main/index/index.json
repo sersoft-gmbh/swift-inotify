@@ -1,0 +1,433 @@
+{
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "title" : "Classes",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/watch\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/inotify\/inotifier\/watch\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/inotify\/inotifier\/watch",
+                "title" : "Inotifier.Watch",
+                "type" : "struct"
+              },
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/inotify\/inotifier\/init()",
+                "title" : "init() throws",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/inotify\/inotifier\/addwatch(for:on:calling:)",
+                "title" : "func addWatch(for: FilePath, on: DispatchQueue, calling: Inotifier.Callback) throws -> Inotifier.Watch",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/inotify\/inotifier\/close()",
+                "title" : "func close() throws",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/inotify\/inotifier\/removewatch(_:)",
+                "title" : "func removeWatch(Inotifier.Watch) throws",
+                "type" : "method"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/inotify\/inotifier\/callback",
+                "title" : "Inotifier.Callback",
+                "type" : "typealias"
+              }
+            ],
+            "path" : "\/documentation\/inotify\/inotifier",
+            "title" : "Inotifier",
+            "type" : "class"
+          },
+          {
+            "title" : "Structures",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/init(rawvalue:)",
+                    "title" : "init(rawValue: InotifyEvent.Flags.RawValue)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawvalue-swift.property",
+                    "title" : "let rawValue: InotifyEvent.Flags.RawValue",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawvalue-swift.typealias",
+                    "title" : "InotifyEvent.Flags.RawValue",
+                    "type" : "typealias"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/accessed",
+                    "title" : "static let accessed: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/attributeschanged",
+                    "title" : "static let attributesChanged: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/filecreated",
+                    "title" : "static let fileCreated: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/filedeleted",
+                    "title" : "static let fileDeleted: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isdirectory",
+                    "title" : "static let isDirectory: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/modified",
+                    "title" : "static let modified: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/movedfrom",
+                    "title" : "static let movedFrom: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/movedto",
+                    "title" : "static let movedTo: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/opened",
+                    "title" : "static let opened: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/selfdeleted",
+                    "title" : "static let selfDeleted: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/selfmoved",
+                    "title" : "static let selfMoved: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/unwritableclose",
+                    "title" : "static let unwritableClose: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/writableclose",
+                    "title" : "static let writableClose: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/init()",
+                        "title" : "init()",
+                        "type" : "init"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/contains(_:)",
+                        "title" : "func contains(Self) -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/formintersection(_:)",
+                        "title" : "func formIntersection(Self)",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/formsymmetricdifference(_:)",
+                        "title" : "func formSymmetricDifference(Self)",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/formunion(_:)",
+                        "title" : "func formUnion(Self)",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/insert(_:)",
+                        "title" : "func insert(Self.Element) -> (inserted: Bool, memberAfterInsert: Self.Element)",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/intersection(_:)",
+                        "title" : "func intersection(Self) -> Self",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/remove(_:)",
+                        "title" : "func remove(Self.Element) -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/symmetricdifference(_:)",
+                        "title" : "func symmetricDifference(Self) -> Self",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/union(_:)",
+                        "title" : "func union(Self) -> Self",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/update(with:)",
+                        "title" : "func update(with: Self.Element) -> Self.Element?",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/optionset-implementations",
+                    "title" : "OptionSet Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/hashvalue",
+                        "title" : "var hashValue: Int",
+                        "type" : "property"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/hash(into:)",
+                        "title" : "func hash(into: inout Hasher)",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawrepresentable-implementations",
+                    "title" : "RawRepresentable Implementations",
+                    "type" : "symbol"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/init(_:)",
+                        "title" : "init<S>(S)",
+                        "type" : "init"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/init(arrayliteral:)",
+                        "title" : "init(arrayLiteral: Self.Element...)",
+                        "type" : "init"
+                      },
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isempty",
+                        "title" : "var isEmpty: Bool",
+                        "type" : "property"
+                      },
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isdisjoint(with:)",
+                        "title" : "func isDisjoint(with: Self) -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isstrictsubset(of:)",
+                        "title" : "func isStrictSubset(of: Self) -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isstrictsuperset(of:)",
+                        "title" : "func isStrictSuperset(of: Self) -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/issubset(of:)",
+                        "title" : "func isSubset(of: Self) -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/issuperset(of:)",
+                        "title" : "func isSuperset(of: Self) -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/subtract(_:)",
+                        "title" : "func subtract(Self)",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/subtracting(_:)",
+                        "title" : "func subtracting(Self) -> Self",
+                        "type" : "method"
+                      }
+                    ],
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/setalgebra-implementations",
+                    "title" : "SetAlgebra Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct",
+                "title" : "InotifyEvent.Flags",
+                "type" : "struct"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.property",
+                "title" : "let flags: InotifyEvent.Flags",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/inotify\/inotifyevent\/path",
+                "title" : "let path: FilePath?",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/inotify\/inotifyevent\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/inotify\/inotifyevent",
+            "title" : "InotifyEvent",
+            "type" : "struct"
+          }
+        ],
+        "path" : "\/documentation\/inotify",
+        "title" : "Inotify",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}

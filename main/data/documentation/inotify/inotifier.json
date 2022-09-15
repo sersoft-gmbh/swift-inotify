@@ -86,9 +86,19 @@
       "kind" : "declarations"
     }
   ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Inotify\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -480,6 +490,11 @@
   "title" : "removeWatch(_:)",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/removewatch(_:)"
+},
+"doc://Inotify/s8SendableP": {
+  "identifier" : "doc:\/\/Inotify\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

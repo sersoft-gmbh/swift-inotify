@@ -81,7 +81,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/Inotify\/SQ"
+        "doc:\/\/Inotify\/SQ",
+        "doc:\/\/Inotify\/s8SendableP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -90,7 +91,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -313,6 +314,11 @@
   "title" : "path",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifyevent\/path"
+},
+"doc://Inotify/s8SendableP": {
+  "identifier" : "doc:\/\/Inotify\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
 }
 }
 }

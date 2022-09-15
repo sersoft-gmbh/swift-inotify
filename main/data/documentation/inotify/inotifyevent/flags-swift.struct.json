@@ -93,6 +93,7 @@
       "identifiers" : [
         "doc:\/\/Inotify\/SQ",
         "doc:\/\/Inotify\/s25ExpressibleByArrayLiteralP",
+        "doc:\/\/Inotify\/SH",
         "doc:\/\/Inotify\/s9OptionSetP",
         "doc:\/\/Inotify\/SY",
         "doc:\/\/Inotify\/s8SendableP",
@@ -105,7 +106,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -153,6 +154,7 @@
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/Equatable-Implementations",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/OptionSet-Implementations",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawRepresentable-Implementations",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/SetAlgebra-Implementations"
       ],
       "title" : "Default Implementations"
@@ -172,6 +174,11 @@
   ]
 , 
 "references": {
+"doc://Inotify/SH": {
+  "identifier" : "doc:\/\/Inotify\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
 "doc://Inotify/SQ": {
   "identifier" : "doc:\/\/Inotify\/SQ",
   "title" : "Swift.Equatable",
@@ -282,6 +289,17 @@
   "title" : "OptionSet Implementations",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/optionset-implementations"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawRepresentable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawRepresentable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "RawRepresentable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawrepresentable-implementations"
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawValue-swift.typealias": {
   "abstract" : [
