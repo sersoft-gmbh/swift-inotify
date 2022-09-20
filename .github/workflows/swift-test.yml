@@ -59,7 +59,7 @@ jobs:
       - name: Generate Coverage Files
         uses: sersoft-gmbh/swift-coverage-action@v3.0.0
         id: coverage-files
-      - uses: codecov/codecov-action@v3.1.0
+      - uses: codecov/codecov-action@v3.1.1
         with:
           token: ${{secrets.CODECOV_TOKEN}}
           files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
