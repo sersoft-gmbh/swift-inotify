@@ -22,8 +22,8 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/apple/swift-system.git", from: "1.0.0"),
-        .package(url: "https://github.com/sersoft-gmbh/swift-filestreamer.git", .upToNextMinor(from: "0.4.0")),
+        .package(url: "https://github.com/apple/swift-system.git", from: "1.2.0"),
+        .package(url: "https://github.com/sersoft-gmbh/swift-filestreamer.git", .upToNextMinor(from: "0.5.0")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

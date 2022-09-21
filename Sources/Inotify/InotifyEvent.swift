@@ -14,7 +14,7 @@ public struct InotifyEvent: Equatable {
     public let flags: Flags
 
     init(cEvent event: cinotify_event) {
-        path = cin_event_name(event).map { FilePath(cString: $0) }
+        path = cin_event_name(event).map { FilePath(platformString: $0) }
         flags = .init(rawValue: event.mask)
     }
 }
