@@ -70,7 +70,7 @@
             },
             {
               "kind" : "keyword",
-              "text" : "class"
+              "text" : "actor"
             },
             {
               "kind" : "text",
@@ -89,7 +89,9 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/Inotify\/s8SendableP"
+        "doc:\/\/Inotify\/s8SendableP",
+        "doc:\/\/Inotify\/ScA",
+        "doc:\/\/Inotify\/12_Concurrency8AnyActorP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -107,7 +109,7 @@
   "topicSections" : [
     {
       "identifiers" : [
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Watch"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents"
       ],
       "title" : "Structures"
     },
@@ -119,17 +121,10 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/addWatch(for:on:calling:)",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/close()",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/removeWatch(_:)"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/events(for:)"
       ],
       "title" : "Instance Methods"
-    },
-    {
-      "identifiers" : [
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Callback"
-      ],
-      "title" : "Type Aliases"
     }
   ],
   "variants" : [
@@ -146,6 +141,16 @@
   ]
 , 
 "references": {
+"doc://Inotify/12_Concurrency8AnyActorP": {
+  "identifier" : "doc:\/\/Inotify\/12_Concurrency8AnyActorP",
+  "title" : "_Concurrency.AnyActor",
+  "type" : "unresolvable"
+},
+"doc://Inotify/ScA": {
+  "identifier" : "doc:\/\/Inotify\/ScA",
+  "title" : "_Concurrency.Actor",
+  "type" : "unresolvable"
+},
 "doc://Inotify/documentation/Inotify": {
   "abstract" : [
 
@@ -191,44 +196,10 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/Callback": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents": {
   "abstract" : [
     {
-      "text" : "The callback that is called for read events.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "typealias"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "Callback"
-    }
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Callback",
-  "kind" : "symbol",
-  "navigatorTitle" : [
-    {
-      "kind" : "identifier",
-      "text" : "Callback"
-    }
-  ],
-  "role" : "symbol",
-  "title" : "Inotifier.Callback",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/callback"
-},
-"doc://Inotify/documentation/Inotify/Inotifier/Watch": {
-  "abstract" : [
-    {
-      "text" : "A watch identifier.",
+      "text" : "An asynchronous sequence of events for a certain file path.",
       "type" : "text"
     }
   ],
@@ -243,135 +214,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "Watch"
+      "text" : "PathEvents"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Watch",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "Watch"
+      "text" : "PathEvents"
     }
   ],
   "role" : "symbol",
-  "title" : "Inotifier.Watch",
+  "title" : "Inotifier.PathEvents",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/watch"
-},
-"doc://Inotify/documentation/Inotify/Inotifier/addWatch(for:on:calling:)": {
-  "abstract" : [
-    {
-      "text" : "Adds a watch for a given file path, calling back on the given queue using the given closure.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "addWatch"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "for"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:13SystemPackage8FilePathV",
-      "text" : "FilePath"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "on"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:8Dispatch0A5QueueC",
-      "text" : "DispatchQueue"
-    },
-    {
-      "kind" : "text",
-      "text" : ", "
-    },
-    {
-      "kind" : "externalParam",
-      "text" : "calling"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC",
-      "text" : "Inotifier"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC8Callbacka",
-      "text" : "Callback"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC",
-      "text" : "Inotifier"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC5WatchV",
-      "text" : "Watch"
-    }
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/addWatch(for:on:calling:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "addWatch(for:on:calling:)",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/addwatch(for:on:calling:)"
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/close()": {
   "abstract" : [
@@ -409,6 +266,77 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/close()"
 },
+"doc://Inotify/documentation/Inotify/Inotifier/events(for:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the asynchronous events sequence for the given file path.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "events"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SystemPackage8FilePathV",
+      "text" : "FilePath"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify9InotifierC",
+      "text" : "Inotifier"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
+      "text" : "PathEvents"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/events(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "events(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/events(for:)"
+},
 "doc://Inotify/documentation/Inotify/Inotifier/init()": {
   "abstract" : [
     {
@@ -436,60 +364,6 @@
   "title" : "init()",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/init()"
-},
-"doc://Inotify/documentation/Inotify/Inotifier/removeWatch(_:)": {
-  "abstract" : [
-    {
-      "text" : "Removes a given watch.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "func"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "removeWatch"
-    },
-    {
-      "kind" : "text",
-      "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC",
-      "text" : "Inotifier"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC5WatchV",
-      "text" : "Watch"
-    },
-    {
-      "kind" : "text",
-      "text" : ") "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "throws"
-    }
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/removeWatch(_:)",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "removeWatch(_:)",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/removewatch(_:)"
 },
 "doc://Inotify/s8SendableP": {
   "identifier" : "doc:\/\/Inotify\/s8SendableP",

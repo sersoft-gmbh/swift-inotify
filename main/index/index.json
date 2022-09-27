@@ -16,28 +16,165 @@
               {
                 "children" : [
                   {
+                    "title" : "Structures",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Instance Methods",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next()",
+                        "title" : "func next() async -> Inotifier.PathEvents.AsyncIterator.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "title" : "Type Aliases",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/element",
+                        "title" : "Inotifier.PathEvents.AsyncIterator.Element",
+                        "type" : "typealias"
+                      }
+                    ],
+                    "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator",
+                    "title" : "Inotifier.PathEvents.AsyncIterator",
+                    "type" : "struct"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifier\/pathevents\/makeasynciterator()",
+                    "title" : "func makeAsyncIterator() -> Inotifier.PathEvents.AsyncIterator",
+                    "type" : "method"
+                  },
+                  {
+                    "title" : "Type Aliases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifier\/pathevents\/element",
+                    "title" : "Inotifier.PathEvents.Element",
+                    "type" : "typealias"
+                  },
+                  {
                     "title" : "Default Implementations",
                     "type" : "groupMarker"
                   },
                   {
                     "children" : [
                       {
-                        "title" : "Operators",
+                        "title" : "Instance Methods",
                         "type" : "groupMarker"
                       },
                       {
-                        "path" : "\/documentation\/inotify\/inotifier\/watch\/!=(_:_:)",
-                        "title" : "static func != (Self, Self) -> Bool",
-                        "type" : "op"
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/allsatisfy(_:)",
+                        "title" : "func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/compactmap(_:)-4eet9",
+                        "title" : "func compactMap<ElementOfResult>((Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/compactmap(_:)-90jb0",
+                        "title" : "func compactMap<ElementOfResult>((Self.Element) async throws -> ElementOfResult?) -> AsyncThrowingCompactMapSequence<Self, ElementOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/contains(_:)",
+                        "title" : "func contains(Self.Element) async rethrows -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/contains(where:)",
+                        "title" : "func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/drop(while:)",
+                        "title" : "func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/dropfirst(_:)",
+                        "title" : "func dropFirst(Int) -> AsyncDropFirstSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/filter(_:)",
+                        "title" : "func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/first(where:)",
+                        "title" : "func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5dzdl",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5sgti",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/map(_:)-13sxo",
+                        "title" : "func map<Transformed>((Self.Element) async throws -> Transformed) -> AsyncThrowingMapSequence<Self, Transformed>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/map(_:)-3h3e",
+                        "title" : "func map<Transformed>((Self.Element) async -> Transformed) -> AsyncMapSequence<Self, Transformed>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/max(by:)",
+                        "title" : "func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/min(by:)",
+                        "title" : "func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/prefix(_:)",
+                        "title" : "func prefix(Int) -> AsyncPrefixSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/prefix(while:)",
+                        "title" : "func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/reduce(_:_:)",
+                        "title" : "func reduce<Result>(Result, (Result, Self.Element) async throws -> Result) async rethrows -> Result",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/reduce(into:_:)",
+                        "title" : "func reduce<Result>(into: Result, (inout Result, Self.Element) async throws -> Void) async rethrows -> Result",
+                        "type" : "method"
                       }
                     ],
-                    "path" : "\/documentation\/inotify\/inotifier\/watch\/equatable-implementations",
-                    "title" : "Equatable Implementations",
+                    "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asyncsequence-implementations",
+                    "title" : "AsyncSequence Implementations",
                     "type" : "symbol"
                   }
                 ],
-                "path" : "\/documentation\/inotify\/inotifier\/watch",
-                "title" : "Inotifier.Watch",
+                "path" : "\/documentation\/inotify\/inotifier\/pathevents",
+                "title" : "Inotifier.PathEvents",
                 "type" : "struct"
               },
               {
@@ -54,28 +191,14 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/inotify\/inotifier\/addwatch(for:on:calling:)",
-                "title" : "func addWatch(for: FilePath, on: DispatchQueue, calling: Inotifier.Callback) throws -> Inotifier.Watch",
-                "type" : "method"
-              },
-              {
                 "path" : "\/documentation\/inotify\/inotifier\/close()",
                 "title" : "func close() throws",
                 "type" : "method"
               },
               {
-                "path" : "\/documentation\/inotify\/inotifier\/removewatch(_:)",
-                "title" : "func removeWatch(Inotifier.Watch) throws",
+                "path" : "\/documentation\/inotify\/inotifier\/events(for:)",
+                "title" : "func events(for: FilePath) throws -> Inotifier.PathEvents",
                 "type" : "method"
-              },
-              {
-                "title" : "Type Aliases",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/inotify\/inotifier\/callback",
-                "title" : "Inotifier.Callback",
-                "type" : "typealias"
               }
             ],
             "path" : "\/documentation\/inotify\/inotifier",
@@ -166,6 +289,11 @@
                     "type" : "property"
                   },
                   {
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/nonwritablefileclosed",
+                    "title" : "static let nonWritableFileClosed: InotifyEvent.Flags",
+                    "type" : "property"
+                  },
+                  {
                     "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/opened",
                     "title" : "static let opened: InotifyEvent.Flags",
                     "type" : "property"
@@ -181,13 +309,8 @@
                     "type" : "property"
                   },
                   {
-                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/unwritableclose",
-                    "title" : "static let unwritableClose: InotifyEvent.Flags",
-                    "type" : "property"
-                  },
-                  {
-                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/writableclose",
-                    "title" : "static let writableClose: InotifyEvent.Flags",
+                    "path" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/writablefileclosed",
+                    "title" : "static let writableFileClosed: InotifyEvent.Flags",
                     "type" : "property"
                   },
                   {

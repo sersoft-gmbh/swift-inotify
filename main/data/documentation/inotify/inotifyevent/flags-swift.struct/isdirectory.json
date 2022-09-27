@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Event occurred against dir.",
+      "text" : "Event occurred against a directory.",
       "type" : "text"
     }
   ],
@@ -199,7 +199,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct": {
   "abstract" : [
     {
-      "text" : "A set of flags that can be set on an event",
+      "text" : "A set of flags that can be set on an event.",
       "type" : "text"
     }
   ],
@@ -233,7 +233,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/isDirectory": {
   "abstract" : [
     {
-      "text" : "Event occurred against dir.",
+      "text" : "Event occurred against a directory.",
       "type" : "text"
     }
   ],

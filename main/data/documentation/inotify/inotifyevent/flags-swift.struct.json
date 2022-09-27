@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "A set of flags that can be set on an event",
+      "text" : "A set of flags that can be set on an event.",
       "type" : "text"
     }
   ],
@@ -141,11 +141,11 @@
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/modified",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/movedFrom",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/movedTo",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/nonWritableFileClosed",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/opened",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/selfDeleted",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/selfMoved",
-        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/unwritableClose",
-        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/writableClose"
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/writableFileClosed"
       ],
       "title" : "Type Properties"
     },
@@ -237,7 +237,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct": {
   "abstract" : [
     {
-      "text" : "A set of flags that can be set on an event",
+      "text" : "A set of flags that can be set on an event.",
       "type" : "text"
     }
   ],
@@ -303,10 +303,7 @@
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawValue-swift.typealias": {
   "abstract" : [
-    {
-      "text" : "inherited",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -457,7 +454,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/fileCreated": {
   "abstract" : [
     {
-      "text" : "Subfile was created.",
+      "text" : "File was created inside the watched path.",
       "type" : "text"
     }
   ],
@@ -511,7 +508,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/fileDeleted": {
   "abstract" : [
     {
-      "text" : "Subfile was deleted.",
+      "text" : "File was deleted inside the watched path.",
       "type" : "text"
     }
   ],
@@ -564,10 +561,7 @@
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/init(rawValue:)": {
   "abstract" : [
-    {
-      "text" : "inherited",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -624,7 +618,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/isDirectory": {
   "abstract" : [
     {
-      "text" : "Event occurred against dir.",
+      "text" : "Event occurred against a directory.",
       "type" : "text"
     }
   ],
@@ -837,6 +831,60 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/movedto"
 },
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/nonWritableFileClosed": {
+  "abstract" : [
+    {
+      "text" : "A non-writable file was closed.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "nonWritableFileClosed"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/nonWritableFileClosed",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "nonWritableFileClosed",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/nonwritablefileclosed"
+},
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/opened": {
   "abstract" : [
     {
@@ -893,10 +941,7 @@
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/rawValue-swift.property": {
   "abstract" : [
-    {
-      "text" : "inherited",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -949,7 +994,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/selfDeleted": {
   "abstract" : [
     {
-      "text" : "Self was deleted.",
+      "text" : "The watched path was deleted.",
       "type" : "text"
     }
   ],
@@ -1003,7 +1048,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/selfMoved": {
   "abstract" : [
     {
-      "text" : "Self was moved.",
+      "text" : "The watched path was moved.",
       "type" : "text"
     }
   ],
@@ -1054,10 +1099,10 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/selfmoved"
 },
-"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/unwritableClose": {
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/writableFileClosed": {
   "abstract" : [
     {
-      "text" : "Unwriteable file closed.",
+      "text" : "A writeable file was closed.",
       "type" : "text"
     }
   ],
@@ -1080,7 +1125,7 @@
     },
     {
       "kind" : "identifier",
-      "text" : "unwritableClose"
+      "text" : "writableFileClosed"
     },
     {
       "kind" : "text",
@@ -1101,66 +1146,12 @@
       "text" : "Flags"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/unwritableClose",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/writableFileClosed",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "unwritableClose",
+  "title" : "writableFileClosed",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/unwritableclose"
-},
-"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/writableClose": {
-  "abstract" : [
-    {
-      "text" : "Writeable file was closed.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "let"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "writableClose"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify0A5EventV",
-      "text" : "InotifyEvent"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
-      "text" : "Flags"
-    }
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/writableClose",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "writableClose",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/writableclose"
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/writablefileclosed"
 },
 "doc://Inotify/s10SetAlgebraP": {
   "identifier" : "doc:\/\/Inotify\/s10SetAlgebraP",

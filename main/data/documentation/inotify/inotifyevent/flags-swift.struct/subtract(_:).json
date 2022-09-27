@@ -300,7 +300,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct": {
   "abstract" : [
     {
-      "text" : "A set of flags that can be set on an event",
+      "text" : "A set of flags that can be set on an event.",
       "type" : "text"
     }
   ],

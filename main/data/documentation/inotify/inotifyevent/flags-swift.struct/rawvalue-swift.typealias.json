@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "inherited",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -159,7 +153,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct": {
   "abstract" : [
     {
-      "text" : "A set of flags that can be set on an event",
+      "text" : "A set of flags that can be set on an event.",
       "type" : "text"
     }
   ],
@@ -192,10 +186,7 @@
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawValue-swift.typealias": {
   "abstract" : [
-    {
-      "text" : "inherited",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
