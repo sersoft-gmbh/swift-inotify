@@ -48,9 +48,9 @@ extension InotifyEvent.Flags {
     public static let modified = InotifyEvent.Flags(rawValue: numericCast(IN_MODIFY))
     /// Metadata changed.
     public static let attributesChanged = InotifyEvent.Flags(rawValue: numericCast(IN_ATTRIB))
-    /// Writtable file was closed.
+    /// Writeable file was closed.
     public static let writableClose = InotifyEvent.Flags(rawValue: numericCast(IN_CLOSE_WRITE))
-    /// Unwrittable file closed.
+    /// Unwriteable file closed.
     public static let unwritableClose = InotifyEvent.Flags(rawValue: numericCast(IN_CLOSE_NOWRITE))
     /// File was opened.
     public static let opened = InotifyEvent.Flags(rawValue: numericCast(IN_OPEN))
