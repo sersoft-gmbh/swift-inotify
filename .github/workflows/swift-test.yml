@@ -11,15 +11,9 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-20.04 ]
-        swift-version: [ '5.5' ]
+        swift-version: [ '5.7' ]
         xcode-version: [ '' ]
         include:
-          - os: ubuntu-20.04
-            swift-version: 5.6
-            xcode-version: ''
-          - os: ubuntu-20.04
-            swift-version: 5.7
-            xcode-version: ''
           - os: ubuntu-22.04
             swift-version: 5.7
             xcode-version: ''
