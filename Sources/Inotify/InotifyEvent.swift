@@ -7,7 +7,7 @@ import SystemPackage
 @_implementationOnly import CInotify
 
 /// An event sent by inotify.
-public struct InotifyEvent: Equatable {
+public struct InotifyEvent: Equatable, @unchecked Sendable { // unchecked because of FilePath
     /// The file path of the event. If nil, the event is not for a file inside of the watch.
     public let path: FilePath?
     /// The flags of the event.
@@ -20,26 +20,18 @@ public struct InotifyEvent: Equatable {
 }
 
 extension InotifyEvent {
-    /// A set of flags that can be set on an event
+    /// A set of flags that can be set on an event.
     @frozen
-    public struct Flags: OptionSet, Hashable {
-        /// inherited
+    public struct Flags: OptionSet, Hashable, Sendable {
         public typealias RawValue = UInt32
 
-        /// inherited
         public let rawValue: RawValue
 
-        /// inherited
         public init(rawValue: RawValue) {
             self.rawValue = rawValue
         }
     }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension InotifyEvent.Flags: Sendable {}
-extension InotifyEvent: @unchecked Sendable {} // unchecked because of FilePath
-#endif
 
 extension InotifyEvent.Flags {
     /// File was accessed.
@@ -48,26 +40,26 @@ extension InotifyEvent.Flags {
     public static let modified = InotifyEvent.Flags(rawValue: numericCast(IN_MODIFY))
     /// Metadata changed.
     public static let attributesChanged = InotifyEvent.Flags(rawValue: numericCast(IN_ATTRIB))
-    /// Writeable file was closed.
-    public static let writableClose = InotifyEvent.Flags(rawValue: numericCast(IN_CLOSE_WRITE))
-    /// Unwriteable file closed.
-    public static let unwritableClose = InotifyEvent.Flags(rawValue: numericCast(IN_CLOSE_NOWRITE))
+    /// A writeable file was closed.
+    public static let writableFileClosed = InotifyEvent.Flags(rawValue: numericCast(IN_CLOSE_WRITE))
+    /// A non-writable file was closed.
+    public static let nonWritableFileClosed = InotifyEvent.Flags(rawValue: numericCast(IN_CLOSE_NOWRITE))
     /// File was opened.
     public static let opened = InotifyEvent.Flags(rawValue: numericCast(IN_OPEN))
     /// File was moved from X.
     public static let movedFrom = InotifyEvent.Flags(rawValue: numericCast(IN_MOVED_FROM))
     /// File was moved to Y.
     public static let movedTo = InotifyEvent.Flags(rawValue: numericCast(IN_MOVED_TO))
-    /// Subfile was created.
+    /// File was created inside the watched path.
     public static let fileCreated = InotifyEvent.Flags(rawValue: numericCast(IN_CREATE))
-    /// Subfile was deleted.
+    /// File was deleted inside the watched path.
     public static let fileDeleted = InotifyEvent.Flags(rawValue: numericCast(IN_DELETE))
-    /// Self was deleted.
+    /// The watched path was deleted.
     public static let selfDeleted = InotifyEvent.Flags(rawValue: numericCast(IN_DELETE_SELF))
-    /// Self was moved.
+    /// The watched path was moved.
     public static let selfMoved = InotifyEvent.Flags(rawValue: numericCast(IN_MOVE_SELF))
 
-    /// Event occurred against dir.
+    /// Event occurred against a directory.
     public static let isDirectory = InotifyEvent.Flags(rawValue: numericCast(IN_ISDIR))
 }
 
@@ -77,7 +69,7 @@ extension InotifyEvent.Flags {
 //#define IN_Q_OVERFLOW    0x00004000 /* Event queued overflowed.  */
 //#define IN_IGNORED   0x00008000 /* File was ignored.  */
 
-/// TODO: These need to go into a separate struct for flags that can be added to a watch.
+// TODO: These need to go into a separate struct for flags that can be added to a watch.
 /* Special flags.  */
 //#define IN_ONLYDIR   0x01000000 /* Only watch the path if it is a directory.  */
 //#define IN_DONT_FOLLOW   0x02000000 /* Do not follow a sym link.  */

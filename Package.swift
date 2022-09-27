@@ -8,11 +8,11 @@ let package = Package(
     name: "swift-inotify",
     platforms: [
         // These are necessary even though we don't support them.
-        // The requirements are taken from swift-filestreamer.
-        .macOS(.v10_13),
-        .iOS(.v11),
-        .tvOS(.v11),
-        .watchOS(.v4),
+        // These are the minimum requirements for async/await.
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .tvOS(.v13),
+        .watchOS(.v6),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -28,9 +28,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .systemLibrary(
-            name: "CInotify"
-        ),
+        .systemLibrary(name: "CInotify"),
         .target(
             name: "Inotify",
             dependencies: [

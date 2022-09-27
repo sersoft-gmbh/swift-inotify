@@ -4,118 +4,136 @@ import Glibc
 import Darwin.C
 #endif
 import Dispatch
+import Foundation
 import SystemPackage
 import FileStreamer
 @_implementationOnly import CInotify
 
 /// The notifier object.
-public final class Inotifier { // FIXME: Make struct again once release builds don't crash with SIGSEGV!
-    /// The callback that is called for read events.
-    public typealias Callback = (FilePath, Array<InotifyEvent>) -> ()
-
-    /// A watch identifier.
+public final actor Inotifier {
+    /// An asynchronous sequence of events for a certain file path.
     @frozen
-    public struct Watch: Hashable {
-        /// The callback data.
-        struct Callback {
-            /// The observed file path.
-            let filePath: FilePath
-            /// The callback queue.
-            let queue: DispatchQueue
-            /// The callback closure.
-            let callback: Inotifier.Callback
+    public struct PathEvents: AsyncSequence, Sendable {
+        public typealias Element = AsyncIterator.Element
 
-            func callAsFunction(with events: Array<InotifyEvent>) {
-                queue.async { callback(filePath, events) }
+        @frozen
+        public struct AsyncIterator: AsyncIteratorProtocol {
+            public typealias Element = InotifyEvent
+
+            @usableFromInline
+            var underlyingIterator: AsyncStream<Element>.AsyncIterator
+
+            @usableFromInline
+            init(underlyingIterator: AsyncStream<Element>.AsyncIterator) {
+                self.underlyingIterator = underlyingIterator
+            }
+
+            @inlinable
+            public mutating func next() async -> Element? {
+                await underlyingIterator.next()
             }
         }
-        /// The internal descriptor.
-        let descriptor: CInt
-    }
 
-    /// The collection of watches.
-    final class Watches {
-        private let lock = DispatchQueue(label: "de.sersoft.inotify.watches.lock")
-        private var watches = Dictionary<CInt, Array<Watch.Callback>>()
+        @usableFromInline
+        let stream: AsyncStream<Element>
 
-        func withWatches<T>(do work: (inout Dictionary<CInt, Array<Watch.Callback>>) throws -> T) rethrows -> T {
-            dispatchPrecondition(condition: .notOnQueue(lock))
-            return try lock.sync { try work(&watches) }
+        @usableFromInline
+        init(stream: AsyncStream<Element>)  {
+            self.stream = stream
+        }
+
+        @inlinable
+        public func makeAsyncIterator() -> AsyncIterator {
+            .init(underlyingIterator: stream.makeAsyncIterator())
         }
     }
 
-    /// The stream of events.
-    let stream: FileStream<cinotify_event>
-    /// The watches collection.
-    let watches: Watches
-
-    /// The underlying file descriptor of the stream.
-    var fileDescriptor: FileDescriptor { stream.fileDescriptor }
+    private let fileDescriptor: FileDescriptor
+    private var streamTask: Task<Void, Never>?
+    private var watches = Dictionary<CInt, Dictionary<UUID, AsyncStream<InotifyEvent>.Continuation>>()
 
     /// Creates a new instance.
     public init() throws {
         guard case let fd = inotify_init1(0), fd != -1 else { throw Errno(rawValue: errno) }
-        let _watches = Watches()
-        stream = .init(fileDescriptor: .init(rawValue: fd)) {
-            // FIXME: Deal with connected events using `event.cookie`.
-            let grouped = Dictionary(grouping: $0, by: \.wd).mapValues {
-                $0.map(InotifyEvent.init)
-            }
-            _watches.withWatches { watches in
-                grouped.forEach { (wd, events) in
-                    watches[wd]?.forEach { $0(with: events) }
-                }
-            }
-        }
-        watches = _watches
+        fileDescriptor = .init(rawValue: fd)
+    }
+
+    deinit {
+        streamTask?.cancel()
+        streamTask = nil
+        try? fileDescriptor.close()
     }
 
     /// Closes this inotify instance. All further calls to this instance will fail.
     public func close() throws {
-        try watches.withWatches {
-            try fileDescriptor.close()
-            $0.removeAll()
-        }
+        stopStreaming()
+        try fileDescriptor.close()
     }
 
-    /// Adds a watch for a given file path, calling back on the given queue using the given closure.
+    /// Returns the asynchronous events sequence for the given file path.
     /// - Parameters:
     ///   - filePath: The file path to watch.
-    ///   - queue: The queue on which to call the `callback` closure.
-    ///   - callback: The closure to call with events.
-    /// - Returns: The added watch. This is needed to later remove it again.
-    public func addWatch(for filePath: FilePath, on queue: DispatchQueue, calling callback: @escaping Callback) throws -> Watch {
-        try watches.withWatches {
-            let wd = filePath.withCString {
-                inotify_add_watch(fileDescriptor.rawValue, $0, cin_all_events)
+    /// - Returns: The asynchronous sequence of events for the given file path.
+    public func events(for filePath: FilePath) throws -> PathEvents {
+        let wd = filePath.withCString {
+            inotify_add_watch(fileDescriptor.rawValue, $0, cin_all_events)
+        }
+        guard wd != -1 else { throw Errno(rawValue: errno) }
+        if streamTask == nil {
+            startStreaming()
+        }
+        let stream = AsyncStream<InotifyEvent> { continuation in
+            let sequenceID = UUID()
+            watches[wd, default: [:]][sequenceID] = continuation
+            continuation.onTermination = { [weak self] _ in
+                Task { [weak self] in
+                    try await self?.removeWatch(forDescriptor: wd, sequenceID: sequenceID)
+                }
             }
-            guard wd != -1 else { throw Errno(rawValue: errno) }
-            $0[wd, default: []].append(Watch.Callback(filePath: filePath, queue: queue, callback: callback))
-            stream.beginStreaming()
-            return Watch(descriptor: wd)
+        }
+        return PathEvents(stream: stream)
+    }
+
+    private func startStreaming() {
+        assert(streamTask == nil)
+        streamTask = Task.detached { [unowned self] in
+            for await event in FileStream<cinotify_event>.Sequence(fileDescriptor: fileDescriptor) {
+                await self.handle(event)
+            }
         }
     }
 
-    private func _removeWatch(forDescriptor wd: CInt) throws {
+    private func handle(_ cEvent: cinotify_event) {
+        guard var watchesToNotify = watches[cEvent.wd] else { return }
+        defer {
+            if watchesToNotify.isEmpty {
+                watches.removeValue(forKey: cEvent.wd)
+            } else {
+                watches[cEvent.wd] = watchesToNotify
+            }
+        }
+        // FIXME: Deal with connected events using `event.cookie`.
+        let event = InotifyEvent(cEvent: cEvent)
+        for (watchID, continuation) in watchesToNotify {
+            if case .terminated = continuation.yield(event) {
+                watchesToNotify.removeValue(forKey: watchID)
+            }
+        }
+    }
+
+    private func stopStreaming() {
+        streamTask?.cancel()
+        streamTask = nil
+    }
+
+    private func removeWatch(forDescriptor wd: CInt, sequenceID: UUID) throws {
         let status = inotify_rm_watch(fileDescriptor.rawValue, wd)
         guard status != -1 else { throw Errno(rawValue: errno) }
-    }
-
-    /// Removes a given watch.
-    /// - Parameter watch: The watch to remove.
-    public func removeWatch(_ watch: Watch) throws {
-        try watches.withWatches {
-            try _removeWatch(forDescriptor: watch.descriptor)
-            $0.removeValue(forKey: watch.descriptor)
-            if $0.isEmpty {
-                stream.endStreaming()
-            }
-        }
+        guard var watchSequences = watches[wd] else { return }
+        watchSequences.removeValue(forKey: sequenceID)
+        guard watchSequences.isEmpty else { return }
+        watches.removeValue(forKey: wd)
+        guard watches.isEmpty else { return }
+        stopStreaming()
     }
 }
-
-#if compiler(>=5.5.2) && canImport(_Concurrency)
-extension Inotifier.Watch: Sendable {}
-extension Inotifier.Watches: @unchecked Sendable {} // unchecked because of manual locking
-extension Inotifier: @unchecked Sendable {} // unchecked because of FileStream, which we use in a Sendable-safe way
-#endif
