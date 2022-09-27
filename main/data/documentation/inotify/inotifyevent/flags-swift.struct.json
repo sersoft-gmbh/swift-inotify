@@ -1057,7 +1057,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/unwritableClose": {
   "abstract" : [
     {
-      "text" : "Unwrittable file closed.",
+      "text" : "Unwriteable file closed.",
       "type" : "text"
     }
   ],
@@ -1111,7 +1111,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/writableClose": {
   "abstract" : [
     {
-      "text" : "Writtable file was closed.",
+      "text" : "Writeable file was closed.",
       "type" : "text"
     }
   ],

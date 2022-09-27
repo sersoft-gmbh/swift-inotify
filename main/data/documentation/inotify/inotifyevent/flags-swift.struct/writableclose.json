@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "Writtable file was closed.",
+      "text" : "Writeable file was closed.",
       "type" : "text"
     }
   ],
@@ -233,7 +233,7 @@
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/writableClose": {
   "abstract" : [
     {
-      "text" : "Writtable file was closed.",
+      "text" : "Writeable file was closed.",
       "type" : "text"
     }
   ],
