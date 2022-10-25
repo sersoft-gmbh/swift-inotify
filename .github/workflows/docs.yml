@@ -41,12 +41,8 @@ jobs:
       package-dump: ${{ steps.dump-package.outputs.package-dump }}
     steps:
       - uses: swift-actions/setup-swift@v1.18.0
-        id: swift-setup
         with:
           swift-version: '5.7'
-      - name: Read OS Version
-        uses: sersoft-gmbh/os-version-action@v2.0.1
-        id: os-version
       - uses: actions/checkout@v3.1.0
       # We don't use a cache here, because SPM doesn't resolve dependencies when dumping packages.
       - name: Dump package
@@ -77,9 +73,9 @@ jobs:
       - uses: actions/cache@v3.0.11
         with:
           path: .build
-          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-setup.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
+          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-setup.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
           restore-keys: |
-            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-setup.outputs.version }}-
+            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-setup.outputs.version }}-
       - uses: sersoft-gmbh/swifty-docs-action@v2.0.3
         env:
           ENABLE_DOCC_SUPPORT: '1'

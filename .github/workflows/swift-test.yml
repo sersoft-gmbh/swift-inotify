@@ -45,12 +45,9 @@ jobs:
       - uses: actions/cache@v3.0.11
         with:
           path: .build
-          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-version.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
+          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-version.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
           restore-keys: |
-            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-version.outputs.version }}-
-      - name: Workaround Package.resolved format issues
-        if: ${{ startsWith(steps.swift-version.outputs.version, '5.5') }}
-        run: rm -rf Package.resolved
+            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-version.outputs.version }}-
       - name: Build & Test
         run: swift test -v --parallel --enable-code-coverage
       - name: Generate Coverage Files
