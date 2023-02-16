@@ -98,7 +98,7 @@ public final actor Inotifier {
         assert(streamTask == nil)
         streamTask = Task.detached { [weak self] in
             for await event in FileStream<cinotify_event>.Sequence(fileDescriptor: fileDescriptor) {
-                guard let self, !Task.isCancelled else { return }
+                guard let self = self, !Task.isCancelled else { return }
                 await self.handle(event)
             }
         }
