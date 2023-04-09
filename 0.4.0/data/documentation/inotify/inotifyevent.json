@@ -1,0 +1,324 @@
+{
+  "abstract" : [
+    {
+      "text" : "An event sent by inotify.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Inotify\/documentation\/Inotify"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:7Inotify0A5EventV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "InotifyEvent"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Inotify"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "InotifyEvent"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "InotifyEvent"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "InotifyEvent"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Inotify\/SQ",
+        "doc:\/\/Inotify\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct"
+      ],
+      "title" : "Structures"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/flags-swift.property",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/path"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Equatable-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/inotify\/inotifyevent"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Inotify/SQ": {
+  "identifier" : "doc:\/\/Inotify\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://Inotify/documentation/Inotify": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Inotify",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent": {
+  "abstract" : [
+    {
+      "text" : "An event sent by inotify.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InotifyEvent"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InotifyEvent"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InotifyEvent",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/equatable-implementations"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "A set of flags that can be set on an event.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Flags"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InotifyEvent.Flags",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/flags-swift.property": {
+  "abstract" : [
+    {
+      "text" : "The flags of the event.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flags"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/flags-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flags",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.property"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/path": {
+  "abstract" : [
+    {
+      "text" : "The file path of the event. If nil, the event is not for a file inside of the watch.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "path"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SystemPackage8FilePathV",
+      "text" : "FilePath"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/path",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "path",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/path"
+},
+"doc://Inotify/s8SendableP": {
+  "identifier" : "doc:\/\/Inotify\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}
