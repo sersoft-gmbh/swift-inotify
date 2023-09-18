@@ -51,7 +51,7 @@ jobs:
       - name: Build & Test
         run: swift test -v --parallel --enable-code-coverage
       - name: Generate Coverage Files
-        uses: sersoft-gmbh/swift-coverage-action@v3
+        uses: sersoft-gmbh/swift-coverage-action@v4
         id: coverage-files
       - uses: codecov/codecov-action@v3
         with:
