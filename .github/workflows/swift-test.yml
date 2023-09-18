@@ -39,7 +39,7 @@ jobs:
         uses: sersoft-gmbh/os-version-action@v2
         id: os-version
       - name: Read Swift Version
-        uses: sersoft-gmbh/swift-version-action@v2
+        uses: sersoft-gmbh/swift-version-action@v3
         id: swift-version
       - uses: actions/checkout@v4
       - uses: actions/cache@v3
