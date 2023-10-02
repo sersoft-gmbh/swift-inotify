@@ -109,7 +109,10 @@
     ],
     "modules" : [
       {
-        "name" : "Inotify"
+        "name" : "Inotify",
+        "relatedModules" : [
+          "_Concurrency"
+        ]
       }
     ],
     "platforms" : [
@@ -262,6 +265,41 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A closure that takes an element as a parameter and",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "returns a Boolean value indicating whether to drop the element from the",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "modified sequence.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "predicate"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -296,41 +334,6 @@
         }
       ],
       "kind" : "content"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A closure that takes an element as a parameter and",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "returns a Boolean value indicating whether to drop the element from the",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "modified sequence.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "predicate"
-        }
-      ]
     },
     {
       "content" : [
@@ -449,7 +452,7 @@
             "for await number in stream {",
             "    print(number, terminator: \" \")",
             "}",
-            "\/\/ Prints \"3 4 5 6 7 8 9 10\""
+            "\/\/ Prints \"3 4 5 6 7 8 9 10 \""
           ],
           "syntax" : null,
           "type" : "codeListing"

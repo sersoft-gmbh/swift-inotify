@@ -124,7 +124,10 @@
     ],
     "modules" : [
       {
-        "name" : "Inotify"
+        "name" : "Inotify",
+        "relatedModules" : [
+          "_Concurrency"
+        ]
       }
     ],
     "platforms" : [
@@ -292,6 +295,49 @@
       "kind" : "declarations"
     },
     {
+      "kind" : "parameters",
+      "parameters" : [
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A mapping closure. ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "transform",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " accepts an element",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "of this sequence as its parameter and returns a transformed value of the",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "same or of a different type.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "transform"
+        }
+      ]
+    },
+    {
       "content" : [
         {
           "anchor" : "return-value",
@@ -334,49 +380,6 @@
         }
       ],
       "kind" : "content"
-    },
-    {
-      "kind" : "parameters",
-      "parameters" : [
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A mapping closure. ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "transform",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " accepts an element",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "of this sequence as its parameter and returns a transformed value of the",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "same or of a different type.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "transform"
-        }
-      ]
     },
     {
       "content" : [
@@ -570,7 +573,7 @@
             "for await numeral in stream {",
             "    print(numeral, terminator: \" \")",
             "}",
-            "\/\/ Prints \"I II III V\""
+            "\/\/ Prints \"I II III V \""
           ],
           "syntax" : null,
           "type" : "codeListing"

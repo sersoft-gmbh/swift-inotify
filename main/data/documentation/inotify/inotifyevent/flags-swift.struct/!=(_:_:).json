@@ -70,7 +70,10 @@
     ],
     "modules" : [
       {
-        "name" : "Inotify"
+        "name" : "Inotify",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",

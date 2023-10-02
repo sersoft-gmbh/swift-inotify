@@ -199,6 +199,36 @@
                 "path" : "\/documentation\/inotify\/inotifier\/events(for:)",
                 "title" : "func events(for: FilePath) throws -> Inotifier.PathEvents",
                 "type" : "method"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifier\/assertisolated(_:file:line:)",
+                    "title" : "func assertIsolated(() -> String, file: StaticString, line: UInt)",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifier\/assumeisolated(_:file:line:)",
+                    "title" : "func assumeIsolated<T>((isolated Self) throws -> T, file: StaticString, line: UInt) rethrows -> T",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifier\/preconditionisolated(_:file:line:)",
+                    "title" : "func preconditionIsolated(() -> String, file: StaticString, line: UInt)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/inotify\/inotifier\/actor-implementations",
+                "title" : "Actor Implementations",
+                "type" : "symbol"
               }
             ],
             "path" : "\/documentation\/inotify\/inotifier",
@@ -551,6 +581,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 0
+    "patch" : 1
   }
 }

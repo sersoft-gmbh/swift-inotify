@@ -116,7 +116,10 @@
     ],
     "modules" : [
       {
-        "name" : "Inotify"
+        "name" : "Inotify",
+        "relatedModules" : [
+          "_Concurrency"
+        ]
       }
     ],
     "platforms" : [
@@ -305,42 +308,6 @@
       "kind" : "declarations"
     },
     {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "A single, flattened asynchronous sequence that contains all",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "elements in all the asychronous sequences produced by ",
-              "type" : "text"
-            },
-            {
-              "code" : "transform",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : ".",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
       "kind" : "parameters",
       "parameters" : [
         {
@@ -382,6 +349,42 @@
           "name" : "transform"
         }
       ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A single, flattened asynchronous sequence that contains all",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "elements in all the asynchronous sequences produced by ",
+              "type" : "text"
+            },
+            {
+              "code" : "transform",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
     },
     {
       "content" : [
@@ -560,7 +563,7 @@
             "for await number in stream {",
             "    print(number, terminator: \" \")",
             "}",
-            "\/\/ Prints \"1 1 2 1 2 3 1 2 3 4 1 2 3 4 5\""
+            "\/\/ Prints \"1 1 2 1 2 3 1 2 3 4 1 2 3 4 5 \""
           ],
           "syntax" : null,
           "type" : "codeListing"

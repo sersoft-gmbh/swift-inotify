@@ -125,6 +125,13 @@
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/events(for:)"
       ],
       "title" : "Instance Methods"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Actor-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -195,6 +202,17 @@
   "title" : "Inotifier",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/Actor-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Actor-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Actor Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/actor-implementations"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents": {
   "abstract" : [
