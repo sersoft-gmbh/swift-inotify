@@ -3,7 +3,6 @@ import Glibc
 #else
 import Darwin.C
 #endif
-import Dispatch
 import Foundation
 import SystemPackage
 import FileStreamer
@@ -94,12 +93,22 @@ public final actor Inotifier {
         return PathEvents(stream: stream)
     }
 
-    private func startStreaming() {
-        assert(streamTask == nil)
+    private func startStreaming(restart: Bool = false) {
+        assert(restart || streamTask == nil)
+        if restart {
+            streamTask?.cancel()
+        }
         streamTask = Task.detached { [fileDescriptor, weak self] in
-            for await event in FileStream<cinotify_event>.Sequence(fileDescriptor: fileDescriptor) {
-                guard let self = self, !Task.isCancelled else { return }
-                await self.handle(event)
+            do {
+                for try await event in FileStream<cinotify_event>(fileDescriptor: fileDescriptor) {
+                    guard !Task.isCancelled, let self else { return }
+                    await self.handle(event)
+                }
+            } catch is CancellationError {
+            } catch {
+                print("[INOTIFY] Error: \(error)")
+                print("[INOTIFY] Restarting stream...")
+                await self?.startStreaming(restart: true)
             }
         }
     }

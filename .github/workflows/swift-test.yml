@@ -6,55 +6,31 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read
+
 jobs:
+  variables:
+    outputs:
+      max-supported-swift-version: '5.9'
+      xcode-scheme: swift-inotify
+      xcode-platform-version: latest
+      fail-if-codecov-fails: true
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 0
+
   test-spm:
+    needs: variables
     strategy:
       matrix:
-        os: [ ubuntu-20.04 ]
-        swift-version: [ '5.6' ]
-        xcode-version: [ '' ]
-        include:
-          - os: ubuntu-20.04
-            swift-version: 5.7
-            xcode-version: ''
-          - os: ubuntu-22.04
-            swift-version: 5.7
-            xcode-version: ''
-
-    runs-on: ${{ matrix.os }}
-
-    steps:
-      - if: ${{ runner.os == 'macOS' }}
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: ${{ matrix.xcode-version }}
-      - name: Install Swift
-        if: ${{ runner.os == 'Linux' }}
-        uses: sersoft-gmbh/swifty-linux-action@v3
-        with:
-          release-version: ${{ matrix.swift-version }}
-          platform: ${{ matrix.os }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Read OS Version
-        uses: sersoft-gmbh/os-version-action@v3
-        id: os-version
-      - name: Read Swift Version
-        uses: sersoft-gmbh/swift-version-action@v3
-        id: swift-version
-      - uses: actions/checkout@v4
-      - uses: actions/cache@v3
-        with:
-          path: .build
-          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-version.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-version.outputs.version }}-
-      - name: Build & Test
-        run: swift test -v --parallel --enable-code-coverage
-      - name: Generate Coverage Files
-        uses: sersoft-gmbh/swift-coverage-action@v4
-        id: coverage-files
-      - uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: ${{ join(fromJSON(steps.coverage-files.outputs.files), ',') }}
-          fail_ci_if_error: true
+        os: [ ubuntu ]
+        swift-version-offset: [ 0 ]
+    uses: sersoft-gmbh/oss-common-actions/.github/workflows/swift-test-spm.yml@main
+    with:
+      os: ${{ matrix.os }}
+      max-swift-version: ${{ needs.variables.outputs.max-supported-swift-version }}
+      swift-version-offset: ${{ matrix.swift-version-offset }}
+      fail-if-codecov-fails: ${{ fromJson(needs.variables.outputs.fail-if-codecov-fails) }}
+    secrets:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
