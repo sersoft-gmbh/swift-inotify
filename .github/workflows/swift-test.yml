@@ -12,7 +12,7 @@ permissions:
 jobs:
   variables:
     outputs:
-      max-supported-swift-version: '5.9'
+      max-supported-swift-version: '5.10'
       xcode-scheme: swift-inotify
       xcode-platform-version: latest
       fail-if-codecov-fails: true
@@ -25,7 +25,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu ]
-        swift-version-offset: [ 0 ]
+        swift-version-offset: [ 0, 1 ]
     uses: sersoft-gmbh/oss-common-actions/.github/workflows/swift-test-spm.yml@main
     with:
       os: ${{ matrix.os }}
