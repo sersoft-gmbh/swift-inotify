@@ -45,6 +45,10 @@
         "text" : "PathEvents"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Inotifier.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L15"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",

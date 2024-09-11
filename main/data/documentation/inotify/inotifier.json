@@ -44,6 +44,10 @@
         "text" : "Inotifier"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Inotifier.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L12"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",

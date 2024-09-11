@@ -82,6 +82,10 @@
         "name" : "Inotify"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Inotifier.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L76"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
     "symbolKind" : "method",
