@@ -1,12 +1,18 @@
-#if os(Linux)
+#if canImport(Darwin)
+import Darwin
+#elseif canImport(Glibc)
 import Glibc
+#elseif canImport(Musl)
+import Musl
+#elseif os(Windows)
+import ucrt
 #else
-import Darwin.C
+#error("Unknown platform")
 #endif
-import Foundation
-import SystemPackage
-import FileStreamer
-@_implementationOnly import CInotify
+fileprivate import Foundation
+public import SystemPackage
+fileprivate import FileStreamer
+internal import CInotify
 
 /// The notifier object.
 public final actor Inotifier {

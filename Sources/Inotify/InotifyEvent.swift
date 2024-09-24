@@ -1,10 +1,16 @@
-#if os(Linux)
+#if canImport(Darwin)
+import Darwin
+#elseif canImport(Glibc)
 import Glibc
+#elseif canImport(Musl)
+import Musl
+#elseif os(Windows)
+import ucrt
 #else
-import Darwin.C
+#error("Unknown platform")
 #endif
-import SystemPackage
-@_implementationOnly import CInotify
+public import SystemPackage
+internal import CInotify
 
 /// An event sent by inotify.
 public struct InotifyEvent: Equatable, @unchecked Sendable { // unchecked because of FilePath
