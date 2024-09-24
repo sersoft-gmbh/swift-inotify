@@ -47,7 +47,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L15"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L21"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -112,24 +112,31 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/makeAsyncIterator()"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/Element"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncSequence-Implementations"

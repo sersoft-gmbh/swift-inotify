@@ -33,6 +33,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/!=(_:_:)"

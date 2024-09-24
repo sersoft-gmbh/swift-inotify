@@ -400,52 +400,6 @@
             }
           ],
           "name" : "initialResult"
-        },
-        {
-          "content" : [
-            {
-              "inlineContent" : [
-                {
-                  "text" : "A closure that combines an accumulating value and",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "an element of the asynchronous sequence into a new accumulating value,",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "for use in the next call of the ",
-                  "type" : "text"
-                },
-                {
-                  "code" : "nextPartialResult",
-                  "type" : "codeVoice"
-                },
-                {
-                  "text" : " closure or",
-                  "type" : "text"
-                },
-                {
-                  "text" : " ",
-                  "type" : "text"
-                },
-                {
-                  "text" : "returned to the caller.",
-                  "type" : "text"
-                }
-              ],
-              "type" : "paragraph"
-            }
-          ],
-          "name" : "nextPartialResult"
         }
       ]
     },

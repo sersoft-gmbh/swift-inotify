@@ -33,12 +33,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Classes",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier"
       ],
       "title" : "Classes"
     },
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent"
       ],

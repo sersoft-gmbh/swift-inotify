@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L12"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L18"
     },
     "role" : "symbol",
     "roleHeading" : "Class",
@@ -94,8 +94,7 @@
     {
       "identifiers" : [
         "doc:\/\/Inotify\/s8SendableP",
-        "doc:\/\/Inotify\/ScA",
-        "doc:\/\/Inotify\/12_Concurrency8AnyActorP"
+        "doc:\/\/Inotify\/ScA"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -112,18 +111,24 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/init()"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/close()",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/events(for:)"
@@ -131,6 +136,7 @@
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Actor-Implementations"
@@ -152,11 +158,6 @@
   ]
 , 
 "references": {
-"doc://Inotify/12_Concurrency8AnyActorP": {
-  "identifier" : "doc:\/\/Inotify\/12_Concurrency8AnyActorP",
-  "title" : "_Concurrency.AnyActor",
-  "type" : "unresolvable"
-},
 "doc://Inotify/ScA": {
   "identifier" : "doc:\/\/Inotify\/ScA",
   "title" : "_Concurrency.Actor",

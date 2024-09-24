@@ -42,7 +42,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L19"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L25"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -106,16 +106,28 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next()"
       ],
       "title" : "Instance Methods"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/Element"
       ],
       "title" : "Type Aliases"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/AsyncIteratorProtocol-Implementations"
+      ],
+      "title" : "Default Implementations"
     }
   ],
   "variants" : [
@@ -246,6 +258,17 @@
   "title" : "Inotifier.PathEvents.AsyncIterator",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/AsyncIteratorProtocol-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/AsyncIteratorProtocol-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "AsyncIteratorProtocol Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/asynciteratorprotocol-implementations"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/Element": {
   "abstract" : [

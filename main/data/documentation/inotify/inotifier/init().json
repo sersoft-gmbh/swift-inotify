@@ -41,7 +41,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L55"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L61"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",

@@ -25,12 +25,12 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-5dzdl"
+    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-7kg5e"
   },
   "kind" : "symbol",
   "metadata" : {
     "extendedModule" : "_Concurrency",
-    "externalID" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__lF::SYNTHESIZED::s:7Inotify9InotifierC10PathEventsV",
+    "externalID" : "s:Sci12_ConcurrencyE7flatMapyAA09AsyncFlatC8SequenceVyxqd__Gqd__7ElementQzYacSciRd__7FailureQyd__AHRtzlF::SYNTHESIZED::s:7Inotify9InotifierC10PathEventsV",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -303,6 +303,40 @@
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:Sci",
               "text" : "AsyncSequence"
+            },
+            {
+              "kind" : "text",
+              "text" : ", "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "Self"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sci7FailureQa",
+              "text" : "Failure"
+            },
+            {
+              "kind" : "text",
+              "text" : " == "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "text" : "SegmentOfResult"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:Sci7FailureQa",
+              "text" : "Failure"
             }
           ]
         }
@@ -585,7 +619,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5dzdl"
+        "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-7kg5e"
       ],
       "traits" : [
         {
@@ -686,7 +720,7 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asyncsequence-implementations"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/flatMap(_:)-5dzdl": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/flatMap(_:)-7kg5e": {
   "abstract" : [
     {
       "text" : "Creates an asynchronous sequence that concatenates the results of calling",
@@ -785,12 +819,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-5dzdl",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-7kg5e",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "flatMap(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5dzdl"
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-7kg5e"
 }
 }
 }

@@ -42,7 +42,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L16"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L22"
     },
     "role" : "symbol",
     "roleHeading" : "Type Alias",

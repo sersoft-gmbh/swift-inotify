@@ -1,4 +1,7 @@
 {
+  "includedArchiveIdentifiers" : [
+    "Inotify"
+  ],
   "interfaceLanguages" : {
     "swift" : [
       {
@@ -38,6 +41,26 @@
                         "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/element",
                         "title" : "Inotifier.PathEvents.AsyncIterator.Element",
                         "type" : "typealias"
+                      },
+                      {
+                        "title" : "Default Implementations",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "children" : [
+                          {
+                            "title" : "Instance Methods",
+                            "type" : "groupMarker"
+                          },
+                          {
+                            "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)",
+                            "title" : "func next(isolation: isolated (any Actor)?) async throws(Self.Failure) -> Self.Element?",
+                            "type" : "method"
+                          }
+                        ],
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/asynciteratorprotocol-implementations",
+                        "title" : "AsyncIteratorProtocol Implementations",
+                        "type" : "symbol"
                       }
                     ],
                     "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator",
@@ -118,13 +141,23 @@
                         "type" : "method"
                       },
                       {
-                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5dzdl",
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5l5k4",
                         "title" : "func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>",
                         "type" : "method"
                       },
                       {
                         "path" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5sgti",
                         "title" : "func flatMap<SegmentOfResult>((Self.Element) async throws -> SegmentOfResult) -> AsyncThrowingFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-71xi2",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>",
+                        "type" : "method"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-7kg5e",
+                        "title" : "func flatMap<SegmentOfResult>((Self.Element) async -> SegmentOfResult) -> AsyncFlatMapSequence<Self, SegmentOfResult>",
                         "type" : "method"
                       },
                       {
@@ -212,7 +245,7 @@
                   },
                   {
                     "path" : "\/documentation\/inotify\/inotifier\/assertisolated(_:file:line:)",
-                    "title" : "func assertIsolated(() -> String, file: StaticString, line: UInt)",
+                    "title" : "func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)",
                     "type" : "method"
                   },
                   {
@@ -222,7 +255,7 @@
                   },
                   {
                     "path" : "\/documentation\/inotify\/inotifier\/preconditionisolated(_:file:line:)",
-                    "title" : "func preconditionIsolated(() -> String, file: StaticString, line: UInt)",
+                    "title" : "func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)",
                     "type" : "method"
                   }
                 ],
@@ -581,6 +614,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 1
+    "patch" : 2
   }
 }

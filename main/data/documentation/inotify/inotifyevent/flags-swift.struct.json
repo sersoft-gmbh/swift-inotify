@@ -48,7 +48,7 @@
     ],
     "remoteSource" : {
       "fileName" : "InotifyEvent.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/InotifyEvent.swift#L25"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/InotifyEvent.swift#L31"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -95,6 +95,7 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
+        "doc:\/\/Inotify\/s15BitwiseCopyableP",
         "doc:\/\/Inotify\/SQ",
         "doc:\/\/Inotify\/s25ExpressibleByArrayLiteralP",
         "doc:\/\/Inotify\/SH",
@@ -118,24 +119,32 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/init(rawValue:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/rawValue-swift.property"
       ],
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawValue-swift.typealias"
       ],
       "title" : "Type Aliases"
     },
     {
+      "anchor" : "Type-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/accessed",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/attributesChanged",
@@ -154,6 +163,7 @@
       "title" : "Type Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/Equatable-Implementations",
@@ -1160,6 +1170,11 @@
 "doc://Inotify/s10SetAlgebraP": {
   "identifier" : "doc:\/\/Inotify\/s10SetAlgebraP",
   "title" : "Swift.SetAlgebra",
+  "type" : "unresolvable"
+},
+"doc://Inotify/s15BitwiseCopyableP": {
+  "identifier" : "doc:\/\/Inotify\/s15BitwiseCopyableP",
+  "title" : "Swift.BitwiseCopyable",
   "type" : "unresolvable"
 },
 "doc://Inotify/s25ExpressibleByArrayLiteralP": {

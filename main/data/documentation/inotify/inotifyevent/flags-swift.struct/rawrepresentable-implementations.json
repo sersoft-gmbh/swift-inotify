@@ -33,6 +33,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/hashValue"
@@ -40,6 +41,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/hash(into:)"

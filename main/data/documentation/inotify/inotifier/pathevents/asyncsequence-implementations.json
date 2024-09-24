@@ -33,6 +33,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/allSatisfy(_:)",
@@ -44,8 +45,10 @@
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/dropFirst(_:)",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/filter(_:)",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/first(where:)",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-5dzdl",
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-5l5k4",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-5sgti",
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-71xi2",
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-7kg5e",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/map(_:)-13sxo",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/map(_:)-3h3e",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/max(by:)",
@@ -1082,7 +1085,7 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/first(where:)"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/flatMap(_:)-5dzdl": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/flatMap(_:)-5l5k4": {
   "abstract" : [
     {
       "text" : "Creates an asynchronous sequence that concatenates the results of calling",
@@ -1181,12 +1184,12 @@
       "text" : ">"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-5dzdl",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-5l5k4",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "flatMap(_:)",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5dzdl"
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5l5k4"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/flatMap(_:)-5sgti": {
   "abstract" : [
@@ -1309,6 +1312,218 @@
   "title" : "flatMap(_:)",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-5sgti"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/flatMap(_:)-71xi2": {
+  "abstract" : [
+    {
+      "text" : "Creates an asynchronous sequence that concatenates the results of calling",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "the given transformation with each element of this sequence.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+      "text" : "AsyncFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-71xi2",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-71xi2"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/flatMap(_:)-7kg5e": {
+  "abstract" : [
+    {
+      "text" : "Creates an asynchronous sequence that concatenates the results of calling",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "the given transformation with each element of this sequence.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "flatMap"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">(("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sci7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:12_Concurrency20AsyncFlatMapSequenceV",
+      "text" : "AsyncFlatMapSequence"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "SegmentOfResult"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/flatMap(_:)-7kg5e",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "flatMap(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/flatmap(_:)-7kg5e"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/map(_:)-13sxo": {
   "abstract" : [

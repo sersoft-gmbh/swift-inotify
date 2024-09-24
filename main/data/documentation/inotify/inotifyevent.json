@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "InotifyEvent.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/InotifyEvent.swift#L10"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/InotifyEvent.swift#L16"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -103,12 +103,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/flags-swift.property",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/path"
@@ -116,6 +120,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Equatable-Implementations"
