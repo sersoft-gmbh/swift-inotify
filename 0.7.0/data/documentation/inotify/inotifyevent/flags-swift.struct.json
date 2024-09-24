@@ -1,0 +1,1196 @@
+{
+  "abstract" : [
+    {
+      "text" : "A set of flags that can be set on an event.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Inotify\/documentation\/Inotify",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Inotify",
+    "externalID" : "s:7Inotify0A5EventV5FlagsV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Flags"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Inotify"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Flags"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "InotifyEvent.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/InotifyEvent.swift#L31"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "InotifyEvent.Flags"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@frozen"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Flags"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Inotify\/s15BitwiseCopyableP",
+        "doc:\/\/Inotify\/SQ",
+        "doc:\/\/Inotify\/s25ExpressibleByArrayLiteralP",
+        "doc:\/\/Inotify\/SH",
+        "doc:\/\/Inotify\/s9OptionSetP",
+        "doc:\/\/Inotify\/SY",
+        "doc:\/\/Inotify\/s8SendableP",
+        "doc:\/\/Inotify\/s10SetAlgebraP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Initializers",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/init(rawValue:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/rawValue-swift.property"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "anchor" : "Type-Aliases",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawValue-swift.typealias"
+      ],
+      "title" : "Type Aliases"
+    },
+    {
+      "anchor" : "Type-Properties",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/accessed",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/attributesChanged",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/fileCreated",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/fileDeleted",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/isDirectory",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/modified",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/movedFrom",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/movedTo",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/nonWritableFileClosed",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/opened",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/selfDeleted",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/selfMoved",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/writableFileClosed"
+      ],
+      "title" : "Type Properties"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/Equatable-Implementations",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/OptionSet-Implementations",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawRepresentable-Implementations",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/SetAlgebra-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/inotify\/inotifyevent\/flags-swift.struct"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Inotify/SH": {
+  "identifier" : "doc:\/\/Inotify\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://Inotify/SQ": {
+  "identifier" : "doc:\/\/Inotify\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://Inotify/SY": {
+  "identifier" : "doc:\/\/Inotify\/SY",
+  "title" : "Swift.RawRepresentable",
+  "type" : "unresolvable"
+},
+"doc://Inotify/documentation/Inotify": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Inotify",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent": {
+  "abstract" : [
+    {
+      "text" : "An event sent by inotify.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InotifyEvent"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InotifyEvent"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InotifyEvent",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "A set of flags that can be set on an event.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Flags"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InotifyEvent.Flags",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/equatable-implementations"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/OptionSet-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/OptionSet-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "OptionSet Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/optionset-implementations"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawRepresentable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawRepresentable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "RawRepresentable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawrepresentable-implementations"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawValue-swift.typealias": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "RawValue"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawValue-swift.typealias",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "RawValue"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InotifyEvent.Flags.RawValue",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawvalue-swift.typealias"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/SetAlgebra-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/SetAlgebra-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "SetAlgebra Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/setalgebra-implementations"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/accessed": {
+  "abstract" : [
+    {
+      "text" : "File was accessed.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "accessed"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/accessed",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "accessed",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/accessed"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/attributesChanged": {
+  "abstract" : [
+    {
+      "text" : "Metadata changed.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "attributesChanged"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/attributesChanged",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "attributesChanged",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/attributeschanged"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/fileCreated": {
+  "abstract" : [
+    {
+      "text" : "File was created inside the watched path.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fileCreated"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/fileCreated",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "fileCreated",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/filecreated"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/fileDeleted": {
+  "abstract" : [
+    {
+      "text" : "File was deleted inside the watched path.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "fileDeleted"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/fileDeleted",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "fileDeleted",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/filedeleted"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/init(rawValue:)": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "rawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV8RawValuea",
+      "text" : "RawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/init(rawValue:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(rawValue:)",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/init(rawvalue:)"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/isDirectory": {
+  "abstract" : [
+    {
+      "text" : "Event occurred against a directory.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isDirectory"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/isDirectory",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isDirectory",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isdirectory"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/modified": {
+  "abstract" : [
+    {
+      "text" : "File was modified.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "modified"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/modified",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "modified",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/modified"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/movedFrom": {
+  "abstract" : [
+    {
+      "text" : "File was moved from X.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "movedFrom"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/movedFrom",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "movedFrom",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/movedfrom"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/movedTo": {
+  "abstract" : [
+    {
+      "text" : "File was moved to Y.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "movedTo"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/movedTo",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "movedTo",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/movedto"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/nonWritableFileClosed": {
+  "abstract" : [
+    {
+      "text" : "A non-writable file was closed.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "nonWritableFileClosed"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/nonWritableFileClosed",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "nonWritableFileClosed",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/nonwritablefileclosed"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/opened": {
+  "abstract" : [
+    {
+      "text" : "File was opened.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "opened"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/opened",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "opened",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/opened"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/rawValue-swift.property": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "rawValue"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV8RawValuea",
+      "text" : "RawValue"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/rawValue-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "rawValue",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawvalue-swift.property"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/selfDeleted": {
+  "abstract" : [
+    {
+      "text" : "The watched path was deleted.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "selfDeleted"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/selfDeleted",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "selfDeleted",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/selfdeleted"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/selfMoved": {
+  "abstract" : [
+    {
+      "text" : "The watched path was moved.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "selfMoved"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/selfMoved",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "selfMoved",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/selfmoved"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/writableFileClosed": {
+  "abstract" : [
+    {
+      "text" : "A writeable file was closed.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "writableFileClosed"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/writableFileClosed",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "writableFileClosed",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/writablefileclosed"
+},
+"doc://Inotify/s10SetAlgebraP": {
+  "identifier" : "doc:\/\/Inotify\/s10SetAlgebraP",
+  "title" : "Swift.SetAlgebra",
+  "type" : "unresolvable"
+},
+"doc://Inotify/s15BitwiseCopyableP": {
+  "identifier" : "doc:\/\/Inotify\/s15BitwiseCopyableP",
+  "title" : "Swift.BitwiseCopyable",
+  "type" : "unresolvable"
+},
+"doc://Inotify/s25ExpressibleByArrayLiteralP": {
+  "identifier" : "doc:\/\/Inotify\/s25ExpressibleByArrayLiteralP",
+  "title" : "Swift.ExpressibleByArrayLiteral",
+  "type" : "unresolvable"
+},
+"doc://Inotify/s8SendableP": {
+  "identifier" : "doc:\/\/Inotify\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+},
+"doc://Inotify/s9OptionSetP": {
+  "identifier" : "doc:\/\/Inotify\/s9OptionSetP",
+  "title" : "Swift.OptionSet",
+  "type" : "unresolvable"
+}
+}
+}

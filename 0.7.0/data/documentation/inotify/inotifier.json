@@ -1,0 +1,397 @@
+{
+  "abstract" : [
+    {
+      "text" : "The notifier object.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Inotify\/documentation\/Inotify"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:7Inotify9InotifierC",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "class"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "Inotifier"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Inotify"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Inotifier"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "Inotifier.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L18"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Class",
+    "symbolKind" : "class",
+    "title" : "Inotifier"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "final"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "actor"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "Inotifier"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/Inotify\/s8SendableP",
+        "doc:\/\/Inotify\/ScA"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "anchor" : "Structures",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents"
+      ],
+      "title" : "Structures"
+    },
+    {
+      "anchor" : "Initializers",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/init()"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/close()",
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/events(for:)"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "anchor" : "Default-Implementations",
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Actor-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/inotify\/inotifier"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Inotify/ScA": {
+  "identifier" : "doc:\/\/Inotify\/ScA",
+  "title" : "_Concurrency.Actor",
+  "type" : "unresolvable"
+},
+"doc://Inotify/documentation/Inotify": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Inotify",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify"
+},
+"doc://Inotify/documentation/Inotify/Inotifier": {
+  "abstract" : [
+    {
+      "text" : "The notifier object.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Inotifier"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Inotifier"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Inotifier",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/Actor-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Actor-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Actor Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/actor-implementations"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents": {
+  "abstract" : [
+    {
+      "text" : "An asynchronous sequence of events for a certain file path.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PathEvents"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PathEvents"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Inotifier.PathEvents",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/close()": {
+  "abstract" : [
+    {
+      "text" : "Closes this inotify instance. All further calls to this instance will fail.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "close"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/close()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "close()",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/close()"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/events(for:)": {
+  "abstract" : [
+    {
+      "text" : "Returns the asynchronous events sequence for the given file path.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "events"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SystemPackage8FilePathV",
+      "text" : "FilePath"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify9InotifierC",
+      "text" : "Inotifier"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
+      "text" : "PathEvents"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/events(for:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "events(for:)",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/events(for:)"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/init()": {
+  "abstract" : [
+    {
+      "text" : "Creates a new instance.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/init()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init()",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/init()"
+},
+"doc://Inotify/s8SendableP": {
+  "identifier" : "doc:\/\/Inotify\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}

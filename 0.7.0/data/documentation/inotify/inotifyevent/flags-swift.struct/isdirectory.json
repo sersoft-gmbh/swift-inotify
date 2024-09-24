@@ -1,0 +1,292 @@
+{
+  "abstract" : [
+    {
+      "text" : "Event occurred against a directory.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/Inotify\/documentation\/Inotify",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent",
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/isDirectory"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Inotify",
+    "externalID" : "s:7Inotify0A5EventV5FlagsV11isDirectoryAEvpZ",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "static"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "keyword",
+        "text" : "let"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "isDirectory"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:7Inotify0A5EventV",
+        "text" : "InotifyEvent"
+      },
+      {
+        "kind" : "text",
+        "text" : "."
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+        "text" : "Flags"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "Inotify"
+      }
+    ],
+    "remoteSource" : {
+      "fileName" : "InotifyEvent.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/InotifyEvent.swift#L69"
+    },
+    "role" : "symbol",
+    "roleHeading" : "Type Property",
+    "symbolKind" : "property",
+    "title" : "isDirectory"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "static"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "keyword",
+              "text" : "let"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "isDirectory"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:7Inotify0A5EventV",
+              "text" : "InotifyEvent"
+            },
+            {
+              "kind" : "text",
+              "text" : "."
+            },
+            {
+              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+              "text" : "Flags"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isdirectory"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://Inotify/documentation/Inotify": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Inotify",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent": {
+  "abstract" : [
+    {
+      "text" : "An event sent by inotify.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InotifyEvent"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InotifyEvent"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InotifyEvent",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct": {
+  "abstract" : [
+    {
+      "text" : "A set of flags that can be set on an event.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Flags"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InotifyEvent.Flags",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct"
+},
+"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/isDirectory": {
+  "abstract" : [
+    {
+      "text" : "Event occurred against a directory.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "isDirectory"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV",
+      "text" : "InotifyEvent"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
+      "text" : "Flags"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/isDirectory",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "isDirectory",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/isdirectory"
+}
+}
+}
