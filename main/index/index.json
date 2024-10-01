@@ -34,12 +34,22 @@
                         "type" : "method"
                       },
                       {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)-3zg72",
+                        "title" : "func next(isolation: isolated (any Actor)?) async throws(Inotifier.PathEvents.AsyncIterator.Failure) -> InotifyEvent?",
+                        "type" : "method"
+                      },
+                      {
                         "title" : "Type Aliases",
                         "type" : "groupMarker"
                       },
                       {
                         "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/element",
                         "title" : "Inotifier.PathEvents.AsyncIterator.Element",
+                        "type" : "typealias"
+                      },
+                      {
+                        "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/failure",
+                        "title" : "Inotifier.PathEvents.AsyncIterator.Failure",
                         "type" : "typealias"
                       },
                       {
@@ -53,7 +63,7 @@
                             "type" : "groupMarker"
                           },
                           {
-                            "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)",
+                            "path" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)-5ul2y",
                             "title" : "func next(isolation: isolated (any Actor)?) async throws(Self.Failure) -> Self.Element?",
                             "type" : "method"
                           }
@@ -83,6 +93,11 @@
                   {
                     "path" : "\/documentation\/inotify\/inotifier\/pathevents\/element",
                     "title" : "Inotifier.PathEvents.Element",
+                    "type" : "typealias"
+                  },
+                  {
+                    "path" : "\/documentation\/inotify\/inotifier\/pathevents\/failure",
+                    "title" : "Inotifier.PathEvents.Failure",
                     "type" : "typealias"
                   },
                   {

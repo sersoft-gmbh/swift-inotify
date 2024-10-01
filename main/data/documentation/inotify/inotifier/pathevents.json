@@ -131,7 +131,8 @@
       "anchor" : "Type-Aliases",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/Element"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/Element",
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/Failure"
       ],
       "title" : "Type Aliases"
     },
@@ -314,6 +315,37 @@
   "title" : "Inotifier.PathEvents.Element",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/element"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/Failure": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "typealias"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Failure"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/Failure",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Failure"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Inotifier.PathEvents.Failure",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/failure"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/makeAsyncIterator()": {
   "abstract" : [

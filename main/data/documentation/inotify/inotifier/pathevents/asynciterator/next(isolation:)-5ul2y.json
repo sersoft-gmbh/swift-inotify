@@ -42,7 +42,7 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)"
+    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)-5ul2y"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -326,7 +326,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)"
+        "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)-5ul2y"
       ],
       "traits" : [
         {
@@ -458,7 +458,7 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/asynciteratorprotocol-implementations"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)-5ul2y": {
   "abstract" : [
     {
       "text" : "Default implementation of ",
@@ -582,12 +582,12 @@
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)-5ul2y",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "next(isolation:)",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)"
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)-5ul2y"
 }
 }
 }

@@ -4,22 +4,21 @@
       [
         "doc:\/\/Inotify\/documentation\/Inotify",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next()"
+    "url" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/Failure"
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV4nextAA0A5EventVSgyYaF",
+    "externalID" : "s:7Inotify9InotifierC10PathEventsV7Failurea",
     "fragments" : [
       {
         "kind" : "keyword",
-        "text" : "func"
+        "text" : "typealias"
       },
       {
         "kind" : "text",
@@ -27,55 +26,7 @@
       },
       {
         "kind" : "identifier",
-        "text" : "next"
-      },
-      {
-        "kind" : "text",
-        "text" : "() "
-      },
-      {
-        "kind" : "keyword",
-        "text" : "async"
-      },
-      {
-        "kind" : "text",
-        "text" : " -> "
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC",
-        "text" : "Inotifier"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-        "text" : "PathEvents"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-        "text" : "AsyncIterator"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV7Elementa",
-        "text" : "Element"
-      },
-      {
-        "kind" : "text",
-        "text" : "?"
+        "text" : "Failure"
       }
     ],
     "modules" : [
@@ -83,14 +34,20 @@
         "name" : "Inotify"
       }
     ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "Failure"
+      }
+    ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L39"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L23"
     },
     "role" : "symbol",
-    "roleHeading" : "Instance Method",
-    "symbolKind" : "method",
-    "title" : "next()"
+    "roleHeading" : "Type Alias",
+    "symbolKind" : "typealias",
+    "title" : "Inotifier.PathEvents.Failure"
   },
   "primaryContentSections" : [
     {
@@ -105,15 +62,7 @@
           "tokens" : [
             {
               "kind" : "keyword",
-              "text" : "mutating"
-            },
-            {
-              "kind" : "text",
-              "text" : " "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "func"
+              "text" : "typealias"
             },
             {
               "kind" : "text",
@@ -121,19 +70,11 @@
             },
             {
               "kind" : "identifier",
-              "text" : "next"
+              "text" : "Failure"
             },
             {
               "kind" : "text",
-              "text" : "() "
-            },
-            {
-              "kind" : "keyword",
-              "text" : "async"
-            },
-            {
-              "kind" : "text",
-              "text" : " -> "
+              "text" : " = "
             },
             {
               "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
@@ -166,14 +107,10 @@
               "text" : "."
             },
             {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/Element",
+              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/Failure",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV7Elementa",
-              "text" : "Element"
-            },
-            {
-              "kind" : "text",
-              "text" : "?"
+              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV7Failurea",
+              "text" : "Failure"
             }
           ]
         }
@@ -192,7 +129,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next()"
+        "\/documentation\/inotify\/inotifier\/pathevents\/failure"
       ],
       "traits" : [
         {
@@ -313,7 +250,7 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/Element": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/Failure": {
   "abstract" : [
 
   ],
@@ -328,30 +265,30 @@
     },
     {
       "kind" : "identifier",
-      "text" : "Element"
+      "text" : "Failure"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/Element",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/Failure",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "Element"
+      "text" : "Failure"
     }
   ],
   "role" : "symbol",
-  "title" : "Inotifier.PathEvents.AsyncIterator.Element",
+  "title" : "Inotifier.PathEvents.AsyncIterator.Failure",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/element"
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/failure"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next()": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/Failure": {
   "abstract" : [
 
   ],
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "func"
+      "text" : "typealias"
     },
     {
       "kind" : "text",
@@ -359,63 +296,21 @@
     },
     {
       "kind" : "identifier",
-      "text" : "next"
-    },
-    {
-      "kind" : "text",
-      "text" : "() "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "async"
-    },
-    {
-      "kind" : "text",
-      "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC",
-      "text" : "Inotifier"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-      "text" : "PathEvents"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-      "text" : "AsyncIterator"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV7Elementa",
-      "text" : "Element"
-    },
-    {
-      "kind" : "text",
-      "text" : "?"
+      "text" : "Failure"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next()",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/Failure",
   "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Failure"
+    }
+  ],
   "role" : "symbol",
-  "title" : "next()",
+  "title" : "Inotifier.PathEvents.Failure",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next()"
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/failure"
 }
 }
 }
