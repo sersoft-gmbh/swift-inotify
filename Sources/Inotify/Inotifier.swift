@@ -20,10 +20,12 @@ public final actor Inotifier {
     @frozen
     public struct PathEvents: AsyncSequence, Sendable {
         public typealias Element = AsyncIterator.Element
+        public typealias Failure = AsyncIterator.Failure
 
         @frozen
         public struct AsyncIterator: AsyncIteratorProtocol {
             public typealias Element = InotifyEvent
+            public typealias Failure = Never
 
             @usableFromInline
             var underlyingIterator: AsyncStream<Element>.AsyncIterator
@@ -37,6 +39,13 @@ public final actor Inotifier {
             public mutating func next() async -> Element? {
                 await underlyingIterator.next()
             }
+
+#if swift(>=6.0)
+            @available(macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *)
+            public mutating func next(isolation actor: isolated (any Actor)?) async throws(Failure) -> InotifyEvent? {
+                await underlyingIterator.next(isolation: actor)
+            }
+#endif
         }
 
         @usableFromInline
