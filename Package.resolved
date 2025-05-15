@@ -1,5 +1,5 @@
 {
-  "originHash" : "4dbd5143d83f1c1c6fbffb2de68eeb72f9d3911e7f3c3159ca17ee57f4faae9f",
+  "originHash" : "6d4c1ea96d7ffc1b4597bb3e4a3fcc9ac72b31385c575e490a9051312b6d7a9a",
   "pins" : [
     {
       "identity" : "swift-docc-plugin",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sersoft-gmbh/swift-filestreamer",
       "state" : {
-        "revision" : "05723be208971c7738a729f9136e4605cc3b3ea5",
-        "version" : "0.9.0"
+        "revision" : "e45f01b9be6b8afb51b72ec9af25d210e3041452",
+        "version" : "0.10.0"
       }
     },
     {
