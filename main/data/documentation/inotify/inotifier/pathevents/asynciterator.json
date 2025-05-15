@@ -42,7 +42,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L26"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L26"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -110,7 +110,7 @@
       "generated" : true,
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next()",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)-3zg72"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)"
       ],
       "title" : "Instance Methods"
     },
@@ -172,7 +172,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "actor"
     },
     {
       "kind" : "text",
@@ -407,7 +407,7 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next()"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)-3zg72": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)": {
   "abstract" : [
 
   ],
@@ -515,12 +515,12 @@
       "text" : "?"
     }
   ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)-3zg72",
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "next(isolation:)",
   "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)-3zg72"
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next(isolation:)"
 }
 }
 }

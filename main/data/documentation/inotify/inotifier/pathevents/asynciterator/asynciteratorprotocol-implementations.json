@@ -37,6 +37,7 @@
       "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next()-5b2qi",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next(isolation:)-5ul2y"
       ],
       "title" : "Instance Methods"
@@ -77,7 +78,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "actor"
     },
     {
       "kind" : "text",
@@ -166,7 +167,7 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)-5ul2y": {
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next()-5b2qi": {
   "abstract" : [
     {
       "text" : "Default implementation of ",
@@ -181,11 +182,11 @@
       "type" : "text"
     },
     {
-      "code" : "next()",
+      "code" : "next(isolation:)",
       "type" : "codeVoice"
     },
     {
-      "text" : ", which is",
+      "text" : ", which",
       "type" : "text"
     },
     {
@@ -193,7 +194,129 @@
       "type" : "text"
     },
     {
-      "text" : "required to maintain backward compatibility with existing async iterators.",
+      "text" : "is required to maintain backward compatibility with existing async",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "iterators.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "next"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ScI7FailureQa",
+      "text" : "Failure"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:ScI7ElementQa",
+      "text" : "Element"
+    },
+    {
+      "kind" : "text",
+      "text" : "?"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/next()-5b2qi",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "next()",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/next()-5b2qi"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)-5ul2y": {
+  "abstract" : [
+    {
+      "text" : "Default implementation of ",
+      "type" : "text"
+    },
+    {
+      "code" : "next(isolation:)",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " in terms of ",
+      "type" : "text"
+    },
+    {
+      "code" : "next()",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ", which",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "is required to maintain backward compatibility with existing async",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "iterators.",
       "type" : "text"
     }
   ],

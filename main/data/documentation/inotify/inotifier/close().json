@@ -49,7 +49,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/Inotifier.swift#L82"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L82"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -136,7 +136,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "actor"
     },
     {
       "kind" : "text",

@@ -48,7 +48,7 @@
     ],
     "remoteSource" : {
       "fileName" : "InotifyEvent.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/Sources\/Inotify\/InotifyEvent.swift#L31"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/InotifyEvent.swift#L31"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",

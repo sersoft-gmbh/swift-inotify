@@ -5,7 +5,7 @@
       "type" : "text"
     },
     {
-      "code" : "next()",
+      "code" : "next(isolation:)",
       "type" : "codeVoice"
     },
     {
@@ -17,7 +17,7 @@
       "type" : "codeVoice"
     },
     {
-      "text" : ", which is",
+      "text" : ", which",
       "type" : "text"
     },
     {
@@ -25,7 +25,15 @@
       "type" : "text"
     },
     {
-      "text" : "required to maintain backward compatibility with existing async iterators.",
+      "text" : "is required to maintain backward compatibility with existing async",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "iterators.",
       "type" : "text"
     }
   ],
@@ -35,8 +43,7 @@
         "doc:\/\/Inotify\/documentation\/Inotify",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/AsyncIteratorProtocol-Implementations"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator"
       ]
     ]
   },
@@ -358,7 +365,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "actor"
     },
     {
       "kind" : "text",
@@ -447,17 +454,6 @@
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator"
 },
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/AsyncIteratorProtocol-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/AsyncIteratorProtocol-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncIteratorProtocol Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asynciterator\/asynciteratorprotocol-implementations"
-},
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)-5ul2y": {
   "abstract" : [
     {
@@ -465,7 +461,7 @@
       "type" : "text"
     },
     {
-      "code" : "next()",
+      "code" : "next(isolation:)",
       "type" : "codeVoice"
     },
     {
@@ -477,7 +473,7 @@
       "type" : "codeVoice"
     },
     {
-      "text" : ", which is",
+      "text" : ", which",
       "type" : "text"
     },
     {
@@ -485,7 +481,15 @@
       "type" : "text"
     },
     {
-      "text" : "required to maintain backward compatibility with existing async iterators.",
+      "text" : "is required to maintain backward compatibility with existing async",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "iterators.",
       "type" : "text"
     }
   ],

@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/Inotify\/documentation\/Inotify",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Actor-Implementations"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier"
       ]
     ]
   },
@@ -531,7 +530,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "actor"
     },
     {
       "kind" : "text",
@@ -554,17 +553,6 @@
   "title" : "Inotifier",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier"
-},
-"doc://Inotify/documentation/Inotify/Inotifier/Actor-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/Actor-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Actor Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/actor-implementations"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/preconditionIsolated(_:file:line:)": {
   "abstract" : [

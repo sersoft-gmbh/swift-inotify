@@ -18,8 +18,7 @@
       [
         "doc:\/\/Inotify\/documentation\/Inotify",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncSequence-Implementations"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents"
       ]
     ]
   },
@@ -700,7 +699,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "actor"
     },
     {
       "kind" : "text",
@@ -757,17 +756,6 @@
   "title" : "Inotifier.PathEvents",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents"
-},
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncSequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncSequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncSequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asyncsequence-implementations"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/compactMap(_:)-90jb0": {
   "abstract" : [

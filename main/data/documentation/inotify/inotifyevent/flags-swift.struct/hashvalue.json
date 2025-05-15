@@ -4,8 +4,7 @@
       [
         "doc:\/\/Inotify\/documentation\/Inotify",
         "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent",
-        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct",
-        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawRepresentable-Implementations"
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct"
       ]
     ]
   },
@@ -251,17 +250,6 @@
   "title" : "InotifyEvent.Flags",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct"
-},
-"doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawRepresentable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Flags-swift.struct\/RawRepresentable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RawRepresentable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifyevent\/flags-swift.struct\/rawrepresentable-implementations"
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/hashValue": {
   "abstract" : [

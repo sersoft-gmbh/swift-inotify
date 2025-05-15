@@ -18,8 +18,7 @@
       [
         "doc:\/\/Inotify\/documentation\/Inotify",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncSequence-Implementations"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents"
       ]
     ]
   },
@@ -400,6 +399,48 @@
             }
           ],
           "name" : "initialResult"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "A closure that combines an accumulating",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "value and an element of the asynchronous sequence into a new",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "text" : "accumulating value, for use in the next call of the",
+                  "type" : "text"
+                },
+                {
+                  "text" : " ",
+                  "type" : "text"
+                },
+                {
+                  "code" : "nextPartialResult",
+                  "type" : "codeVoice"
+                },
+                {
+                  "text" : " closure or returned to the caller.",
+                  "type" : "text"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "updateAccumulatingResult"
         }
       ]
     },
@@ -487,11 +528,11 @@
               "type" : "text"
             },
             {
-              "code" : "nextPartialResult",
+              "code" : "updateAccumulatingResult",
               "type" : "codeVoice"
             },
             {
-              "text" : " closure executes sequentially with an accumulating",
+              "text" : " closure executes sequentially with an",
               "type" : "text"
             },
             {
@@ -499,7 +540,7 @@
               "type" : "text"
             },
             {
-              "text" : "value initialized to ",
+              "text" : "accumulating value initialized to ",
               "type" : "text"
             },
             {
@@ -507,7 +548,15 @@
               "type" : "codeVoice"
             },
             {
-              "text" : " and each element of the sequence.",
+              "text" : " and each element of the",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "sequence.",
               "type" : "text"
             }
           ],
@@ -601,7 +650,7 @@
   "fragments" : [
     {
       "kind" : "keyword",
-      "text" : "class"
+      "text" : "actor"
     },
     {
       "kind" : "text",
@@ -658,17 +707,6 @@
   "title" : "Inotifier.PathEvents",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents"
-},
-"doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncSequence-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncSequence-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "AsyncSequence Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifier\/pathevents\/asyncsequence-implementations"
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/reduce(into:_:)": {
   "abstract" : [

@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/Inotify\/documentation\/Inotify",
-        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent",
-        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Equatable-Implementations"
+        "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent"
       ]
     ]
   },
@@ -429,17 +428,6 @@
   "title" : "!=(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifyevent\/!=(_:_:)"
-},
-"doc://Inotify/documentation/Inotify/InotifyEvent/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/InotifyEvent\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/inotify\/inotifyevent\/equatable-implementations"
 }
 }
 }
