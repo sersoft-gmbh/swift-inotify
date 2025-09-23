@@ -10,7 +10,7 @@ struct InotifyTests {
         let tempDir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         try FileManager.default.createDirectory(at: tempDir, withIntermediateDirectories: true)
         defer {
-            try FileManager.default.removeItem(at: tempDir)
+            try? FileManager.default.removeItem(at: tempDir)
         }
         let notifier = try Inotifier()
         let expectedEventCount = 3
