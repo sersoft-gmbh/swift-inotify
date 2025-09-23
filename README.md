@@ -4,8 +4,6 @@
 ![Tests](https://github.com/sersoft-gmbh/swift-inotify/workflows/Tests/badge.svg)
 [![Docs](https://img.shields.io/badge/-documentation-informational)](https://sersoft-gmbh.github.io/swift-inotify)
 
-A Swift wrapper around `inotify` on Linux.
-
 ## Documentation
 
 The API is documented using header doc. If you prefer to view the documentation as a webpage, there is an [online version](https://sersoft-gmbh.github.io/swift-inotify) available for you.

@@ -40,12 +40,10 @@ public final actor Inotifier {
                 await underlyingIterator.next()
             }
 
-#if swift(>=6.0)
             @available(macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *)
             public mutating func next(isolation actor: isolated (any Actor)?) async throws(Failure) -> InotifyEvent? {
                 await underlyingIterator.next(isolation: actor)
             }
-#endif
         }
 
         @usableFromInline
@@ -115,7 +113,7 @@ public final actor Inotifier {
         }
         streamTask = Task.detached { [fileDescriptor, weak self] in
             do {
-                for try await event in FileStream<cinotify_event>(fileDescriptor: fileDescriptor) {
+                for try await event in FileStream<cinotify_event, _>(fileDescriptor: fileDescriptor, failureBehavior: .throw) {
                     guard !Task.isCancelled, let self else { return }
                     await self.handle(event)
                 }

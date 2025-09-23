@@ -1,13 +1,15 @@
 import Foundation
-import XCTest
+import Testing
 import SystemPackage
 @testable import Inotify
 
-final class InotifyTests: XCTestCase {
-    func testEventNotifying() async throws {
+@Suite
+struct InotifyTests {
+    @Test
+    func eventNotifying() async throws {
         let tempDir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         try FileManager.default.createDirectory(at: tempDir, withIntermediateDirectories: true)
-        addTeardownBlock {
+        defer {
             try FileManager.default.removeItem(at: tempDir)
         }
         let notifier = try Inotifier()
@@ -33,7 +35,7 @@ final class InotifyTests: XCTestCase {
         }
         let events = try await eventsTask.value
         cancellation.cancel()
-        XCTAssertFalse(eventsTask.isCancelled)
-        XCTAssertEqual(events.count, expectedEventCount)
+        #expect(!eventsTask.isCancelled)
+        #expect(events.count == expectedEventCount)
     }
 }

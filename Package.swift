@@ -1,12 +1,16 @@
-// swift-tools-version:6.1
+// swift-tools-version:6.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let swiftSettings: Array<SwiftSetting> = [
     .swiftLanguageMode(.v6),
+    .strictMemorySafety(),
+    // Xcode 26.0 fails to build targets with dependencies having this enabled...
+    // .treatAllWarnings(as: .error),
     .enableUpcomingFeature("ExistentialAny"),
     .enableUpcomingFeature("InternalImportsByDefault"),
+    .enableUpcomingFeature("MemberImportVisibility"),
 ]
 
 let package = Package(
@@ -14,10 +18,11 @@ let package = Package(
     platforms: [
         // These are necessary even though we don't support them.
         // These are the minimum requirements for async/await.
-        .macOS(.v10_15),
-        .iOS(.v13),
-        .tvOS(.v13),
-        .watchOS(.v6),
+        .macOS(.v15),
+        .iOS(.v18),
+        .tvOS(.v18),
+        .watchOS(.v11),
+        .visionOS(.v1),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -29,7 +34,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-system", from: "1.2.0"),
-        .package(url: "https://github.com/sersoft-gmbh/swift-filestreamer", .upToNextMinor(from: "0.10.0")),
+        .package(url: "https://github.com/sersoft-gmbh/swift-filestreamer", .upToNextMinor(from: "0.11.1")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
