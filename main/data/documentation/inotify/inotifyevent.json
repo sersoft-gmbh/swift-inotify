@@ -86,7 +86,8 @@
     {
       "identifiers" : [
         "doc:\/\/Inotify\/SQ",
-        "doc:\/\/Inotify\/s8SendableP"
+        "doc:\/\/Inotify\/s8SendableP",
+        "doc:\/\/Inotify\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -149,7 +150,18 @@
 },
 "doc://Inotify/documentation/Inotify": {
   "abstract" : [
-
+    {
+      "text" : "A Swift wrapper around ",
+      "type" : "text"
+    },
+    {
+      "code" : "inotify",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " on Linux.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
   "kind" : "symbol",
@@ -323,6 +335,11 @@
   "title" : "path",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifyevent\/path"
+},
+"doc://Inotify/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/Inotify\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://Inotify/s8SendableP": {
   "identifier" : "doc:\/\/Inotify\/s8SendableP",

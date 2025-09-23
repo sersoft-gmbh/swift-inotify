@@ -102,6 +102,7 @@
         "doc:\/\/Inotify\/s9OptionSetP",
         "doc:\/\/Inotify\/SY",
         "doc:\/\/Inotify\/s8SendableP",
+        "doc:\/\/Inotify\/s16SendableMetatypeP",
         "doc:\/\/Inotify\/s10SetAlgebraP"
       ],
       "kind" : "relationships",
@@ -205,7 +206,18 @@
 },
 "doc://Inotify/documentation/Inotify": {
   "abstract" : [
-
+    {
+      "text" : "A Swift wrapper around ",
+      "type" : "text"
+    },
+    {
+      "code" : "inotify",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " on Linux.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
   "kind" : "symbol",
@@ -1175,6 +1187,11 @@
 "doc://Inotify/s15BitwiseCopyableP": {
   "identifier" : "doc:\/\/Inotify\/s15BitwiseCopyableP",
   "title" : "Swift.BitwiseCopyable",
+  "type" : "unresolvable"
+},
+"doc://Inotify/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/Inotify\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
 "doc://Inotify/s25ExpressibleByArrayLiteralP": {

@@ -84,7 +84,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L91"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L89"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -236,7 +236,18 @@
 "references": {
 "doc://Inotify/documentation/Inotify": {
   "abstract" : [
-
+    {
+      "text" : "A Swift wrapper around ",
+      "type" : "text"
+    },
+    {
+      "code" : "inotify",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " on Linux.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
   "kind" : "symbol",

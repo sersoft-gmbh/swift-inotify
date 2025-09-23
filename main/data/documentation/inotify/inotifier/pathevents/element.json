@@ -142,7 +142,18 @@
 "references": {
 "doc://Inotify/documentation/Inotify": {
   "abstract" : [
-
+    {
+      "text" : "A Swift wrapper around ",
+      "type" : "text"
+    },
+    {
+      "code" : "inotify",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " on Linux.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
   "kind" : "symbol",

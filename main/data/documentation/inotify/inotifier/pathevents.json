@@ -95,6 +95,7 @@
     {
       "identifiers" : [
         "doc:\/\/Inotify\/s8SendableP",
+        "doc:\/\/Inotify\/s16SendableMetatypeP",
         "doc:\/\/Inotify\/Sci"
       ],
       "kind" : "relationships",
@@ -166,7 +167,18 @@
 },
 "doc://Inotify/documentation/Inotify": {
   "abstract" : [
-
+    {
+      "text" : "A Swift wrapper around ",
+      "type" : "text"
+    },
+    {
+      "code" : "inotify",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " on Linux.",
+      "type" : "text"
+    }
   ],
   "identifier" : "doc:\/\/Inotify\/documentation\/Inotify",
   "kind" : "symbol",
@@ -398,6 +410,11 @@
   "title" : "makeAsyncIterator()",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/pathevents\/makeasynciterator()"
+},
+"doc://Inotify/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/Inotify\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://Inotify/s8SendableP": {
   "identifier" : "doc:\/\/Inotify\/s8SendableP",
