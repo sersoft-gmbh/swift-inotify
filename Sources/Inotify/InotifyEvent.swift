@@ -13,7 +13,7 @@ public import SystemPackage
 internal import CInotify
 
 /// An event sent by inotify.
-public struct InotifyEvent: Equatable, Sendable { // unchecked because of FilePath
+public struct InotifyEvent: Equatable, Sendable {
     /// The file path of the event. If nil, the event is not for a file inside of the watch.
     public let path: FilePath?
     /// The flags of the event.
