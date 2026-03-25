@@ -1,4 +1,18 @@
 {
+  "abstract" : [
+    {
+      "text" : "Creates the asynchronous iterator that produces elements of this",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "asynchronous sequence.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -127,6 +141,42 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "An instance of the ",
+              "type" : "text"
+            },
+            {
+              "code" : "AsyncIterator",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " type used to produce",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "elements of the asynchronous sequence.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -243,7 +293,18 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator": {
   "abstract" : [
-
+    {
+      "text" : "The type of asynchronous iterator that produces elements of this",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "asynchronous sequence.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -274,7 +335,18 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/makeAsyncIterator()": {
   "abstract" : [
-
+    {
+      "text" : "Creates the asynchronous iterator that produces elements of this",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "asynchronous sequence.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

@@ -1,4 +1,18 @@
 {
+  "abstract" : [
+    {
+      "text" : "Asynchronously advances to the next element and returns it, or ends the",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "sequence if there is no next element.",
+      "type" : "text"
+    }
+  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -309,6 +323,42 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The next element, if it exists, or ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " to signal the end of",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "the sequence.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -425,7 +475,18 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator": {
   "abstract" : [
-
+    {
+      "text" : "The type of asynchronous iterator that produces elements of this",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "asynchronous sequence.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -456,7 +517,10 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/Failure": {
   "abstract" : [
-
+    {
+      "text" : "The type of failure produced by iteration.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -487,7 +551,18 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)": {
   "abstract" : [
-
+    {
+      "text" : "Asynchronously advances to the next element and returns it, or ends the",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "sequence if there is no next element.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

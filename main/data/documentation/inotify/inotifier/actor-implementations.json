@@ -37,7 +37,9 @@
       "identifiers" : [
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/assertIsolated(_:file:line:)",
         "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/assumeIsolated(_:file:line:)",
-        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/preconditionIsolated(_:file:line:)"
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/preconditionIsolated(_:file:line:)",
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/withSerialExecutor(_:)-1v1q7",
+        "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/withSerialExecutor(_:)-7kufz"
       ],
       "title" : "Instance Methods"
     }
@@ -419,6 +421,248 @@
   "title" : "preconditionIsolated(_:file:line:)",
   "type" : "topic",
   "url" : "\/documentation\/inotify\/inotifier\/preconditionisolated(_:file:line:)"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/withSerialExecutor(_:)-1v1q7": {
+  "abstract" : [
+    {
+      "text" : "Perform an operation with the actor’s ",
+      "type" : "text"
+    },
+    {
+      "code" : "SerialExecutor",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "withSerialExecutor"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "nonisolated(nonsending)"
+    },
+    {
+      "kind" : "text",
+      "text" : " (any "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Scf",
+      "text" : "SerialExecutor"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "async"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/withSerialExecutor(_:)-1v1q7",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "withSerialExecutor(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/withserialexecutor(_:)-1v1q7"
+},
+"doc://Inotify/documentation/Inotify/Inotifier/withSerialExecutor(_:)-7kufz": {
+  "abstract" : [
+    {
+      "text" : "Perform an operation with the actor’s ",
+      "type" : "text"
+    },
+    {
+      "code" : "SerialExecutor",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "withSerialExecutor"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ">((any "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Scf",
+      "text" : "SerialExecutor"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    },
+    {
+      "kind" : "text",
+      "text" : ") "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "E"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "T"
+    }
+  ],
+  "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/withSerialExecutor(_:)-7kufz",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "withSerialExecutor(_:)",
+  "type" : "topic",
+  "url" : "\/documentation\/inotify\/inotifier\/withserialexecutor(_:)-7kufz"
 }
 }
 }

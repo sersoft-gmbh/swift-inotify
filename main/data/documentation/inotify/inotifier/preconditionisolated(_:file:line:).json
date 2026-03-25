@@ -432,7 +432,7 @@
             {
               "inlineContent" : [
                 {
-                  "text" : "This check is performed against the actor’s serial executor,",
+                  "text" : "Because this check is performed against the actor’s serial executor,",
                   "type" : "text"
                 },
                 {
@@ -440,7 +440,7 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "meaning that \/ if another actor uses the same serial executor–by using",
+                  "text" : "if another actor uses the same serial executor–by using",
                   "type" : "text"
                 },
                 {
@@ -464,7 +464,7 @@
                   "type" : "text"
                 },
                 {
-                  "text" : "check will succeed , as from a concurrency safety perspective, the",
+                  "text" : "check will succeed.  From a concurrency safety perspective, the",
                   "type" : "text"
                 },
                 {

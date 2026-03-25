@@ -436,7 +436,18 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator": {
   "abstract" : [
-
+    {
+      "text" : "The type of asynchronous iterator that produces elements of this",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "asynchronous sequence.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
