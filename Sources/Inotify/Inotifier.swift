@@ -7,7 +7,7 @@ import Musl
 #elseif os(Windows)
 import ucrt
 #else
-#error("Unknown platform")
+#error("Unsupported platform")
 #endif
 fileprivate import Foundation
 public import SystemPackage
@@ -35,10 +35,18 @@ public final actor Inotifier {
                 self.underlyingIterator = underlyingIterator
             }
 
+#if compiler(>=6.2)
+            @inlinable
+            @concurrent
+            public mutating func next() async -> Element? {
+                await underlyingIterator.next()
+            }
+#else
             @inlinable
             public mutating func next() async -> Element? {
                 await underlyingIterator.next()
             }
+#endif
 
             @available(macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0, *)
             public mutating func next(isolation actor: isolated (any Actor)?) async throws(Failure) -> InotifyEvent? {
@@ -66,7 +74,8 @@ public final actor Inotifier {
 
     /// Creates a new instance.
     public init() throws {
-        guard case let fd = inotify_init1(0), fd != -1 else { throw Errno(rawValue: errno) }
+        guard case let fd = inotify_init1(0), fd != -1
+        else { throw Errno(rawValue: errno) }
         fileDescriptor = .init(rawValue: fd)
     }
 
@@ -87,9 +96,15 @@ public final actor Inotifier {
     ///   - filePath: The file path to watch.
     /// - Returns: The asynchronous sequence of events for the given file path.
     public func events(for filePath: FilePath) throws -> PathEvents {
+#if compiler(>=6.2)
+        let wd = unsafe filePath.withCString {
+            unsafe inotify_add_watch(fileDescriptor.rawValue, $0, cin_all_events)
+        }
+#else
         let wd = filePath.withCString {
             inotify_add_watch(fileDescriptor.rawValue, $0, cin_all_events)
         }
+#endif
         guard wd != -1 else { throw Errno(rawValue: errno) }
         if streamTask == nil {
             startStreaming()
@@ -99,7 +114,11 @@ public final actor Inotifier {
             watches[wd, default: [:]][sequenceID] = continuation
             continuation.onTermination = { [weak self] _ in
                 Task { [weak self] in
-                    try await self?.removeWatch(forDescriptor: wd, sequenceID: sequenceID)
+                    do {
+                        try await self?.removeWatch(forDescriptor: wd, sequenceID: sequenceID)
+                    } catch {
+                        print("[INOTIFY]: Failed to remove watch!")
+                    }
                 }
             }
         }

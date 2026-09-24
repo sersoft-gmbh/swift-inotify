@@ -7,7 +7,7 @@ import Musl
 #elseif os(Windows)
 import ucrt
 #else
-#error("Unknown platform")
+#error("Unsupported platform")
 #endif
 public import SystemPackage
 internal import CInotify
@@ -20,7 +20,11 @@ public struct InotifyEvent: Equatable, Sendable {
     public let flags: Flags
 
     init(cEvent event: cinotify_event) {
+#if compiler(>=6.2)
+        path = unsafe cin_event_name(event).map { unsafe FilePath(platformString: $0) }
+#else
         path = cin_event_name(event).map { FilePath(platformString: $0) }
+#endif
         flags = .init(rawValue: event.mask)
     }
 }
