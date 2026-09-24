@@ -1,18 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Asynchronously advances to the next element and returns it, or ends the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "sequence if there is no next element.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -61,7 +47,15 @@
       },
       {
         "kind" : "text",
-        "text" : " (any "
+        "text" : " ("
+      },
+      {
+        "kind" : "keyword",
+        "text" : "any"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
       },
       {
         "kind" : "typeIdentifier",
@@ -87,33 +81,6 @@
       {
         "kind" : "text",
         "text" : "("
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC",
-        "text" : "Inotifier"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-        "text" : "PathEvents"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-        "text" : "AsyncIterator"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
       },
       {
         "kind" : "typeIdentifier",
@@ -150,6 +117,20 @@
       {
         "beta" : false,
         "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "iPadOS",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
+        "introducedAt" : "18.0",
+        "name" : "Mac Catalyst",
+        "unavailable" : false
+      },
+      {
+        "beta" : false,
+        "deprecated" : false,
         "introducedAt" : "15.0",
         "name" : "macOS",
         "unavailable" : false
@@ -178,7 +159,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L44"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L52"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -242,7 +223,15 @@
             },
             {
               "kind" : "text",
-              "text" : " (any "
+              "text" : " ("
+            },
+            {
+              "kind" : "keyword",
+              "text" : "any"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
             },
             {
               "kind" : "typeIdentifier",
@@ -270,36 +259,6 @@
               "text" : "("
             },
             {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC",
-              "text" : "Inotifier"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-              "text" : "PathEvents"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-              "text" : "AsyncIterator"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
               "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/Failure",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV7Failurea",
@@ -323,42 +282,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The next element, if it exists, or ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " to signal the end of",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the sequence.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -475,18 +398,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator": {
   "abstract" : [
-    {
-      "text" : "The type of asynchronous iterator that produces elements of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -517,10 +429,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/Failure": {
   "abstract" : [
-    {
-      "text" : "The type of failure produced by iteration.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -551,18 +460,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next(isolation:)": {
   "abstract" : [
-    {
-      "text" : "Asynchronously advances to the next element and returns it, or ends the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "sequence if there is no next element.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -595,7 +493,15 @@
     },
     {
       "kind" : "text",
-      "text" : " (any "
+      "text" : " ("
+    },
+    {
+      "kind" : "keyword",
+      "text" : "any"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
     },
     {
       "kind" : "typeIdentifier",
@@ -621,33 +527,6 @@
     {
       "kind" : "text",
       "text" : "("
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC",
-      "text" : "Inotifier"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-      "text" : "PathEvents"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-      "text" : "AsyncIterator"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

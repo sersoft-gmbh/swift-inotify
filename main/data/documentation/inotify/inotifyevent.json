@@ -275,15 +275,6 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify0A5EventV",
-      "text" : "InotifyEvent"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
       "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
       "text" : "Flags"
     }

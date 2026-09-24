@@ -48,7 +48,7 @@
     ],
     "remoteSource" : {
       "fileName" : "InotifyEvent.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/InotifyEvent.swift#L31"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/InotifyEvent.swift#L35"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -329,18 +329,7 @@
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/RawValue-swift.typealias": {
   "abstract" : [
-    {
-      "text" : "The raw type that can be used to represent all values of the conforming",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "type.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -598,10 +587,7 @@
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/init(rawValue:)": {
   "abstract" : [
-    {
-      "text" : "Creates a new option set from the given raw value.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -619,24 +605,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify0A5EventV",
-      "text" : "InotifyEvent"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
-      "text" : "Flags"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",
@@ -981,10 +949,7 @@
 },
 "doc://Inotify/documentation/Inotify/InotifyEvent/Flags-swift.struct/rawValue-swift.property": {
   "abstract" : [
-    {
-      "text" : "The corresponding value of the raw type.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -1002,24 +967,6 @@
     {
       "kind" : "text",
       "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify0A5EventV",
-      "text" : "InotifyEvent"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify0A5EventV5FlagsV",
-      "text" : "Flags"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

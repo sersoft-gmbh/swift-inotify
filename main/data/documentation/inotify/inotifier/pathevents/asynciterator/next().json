@@ -1,18 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Asynchronously advances to the next element and returns it, or ends the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "sequence if there is no next element.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -57,33 +43,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC",
-        "text" : "Inotifier"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-        "text" : "PathEvents"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-        "text" : "AsyncIterator"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV7Elementa",
         "text" : "Element"
       },
@@ -99,7 +58,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L39"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L41"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -117,6 +76,14 @@
             "Linux"
           ],
           "tokens" : [
+            {
+              "kind" : "attribute",
+              "text" : "@concurrent"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
             {
               "kind" : "keyword",
               "text" : "mutating"
@@ -150,36 +117,6 @@
               "text" : " -> "
             },
             {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC",
-              "text" : "Inotifier"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-              "text" : "PathEvents"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-              "text" : "AsyncIterator"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
               "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator\/Element",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV7Elementa",
@@ -193,42 +130,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The next element, if it exists, or ",
-              "type" : "text"
-            },
-            {
-              "code" : "nil",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " to signal the end of",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "the sequence.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -345,18 +246,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator": {
   "abstract" : [
-    {
-      "text" : "The type of asynchronous iterator that produces elements of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -418,18 +308,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator/next()": {
   "abstract" : [
-    {
-      "text" : "Asynchronously advances to the next element and returns it, or ends the",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "sequence if there is no next element.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -455,33 +334,6 @@
     {
       "kind" : "text",
       "text" : " -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC",
-      "text" : "Inotifier"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-      "text" : "PathEvents"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
-      "text" : "AsyncIterator"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

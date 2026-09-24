@@ -1,18 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "Creates the asynchronous iterator that produces elements of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -48,24 +34,6 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC",
-        "text" : "Inotifier"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-        "text" : "PathEvents"
-      },
-      {
-        "kind" : "text",
-        "text" : "."
-      },
-      {
-        "kind" : "typeIdentifier",
         "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
         "text" : "AsyncIterator"
       }
@@ -77,7 +45,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Inotifier.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L58"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/swift-inotify\/blob\/refs\/heads\/main\/Sources\/Inotify\/Inotifier.swift#L66"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -112,26 +80,6 @@
               "text" : "() -> "
             },
             {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC",
-              "text" : "Inotifier"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-              "text" : "PathEvents"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
               "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator",
               "kind" : "typeIdentifier",
               "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV13AsyncIteratorV",
@@ -141,42 +89,6 @@
         }
       ],
       "kind" : "declarations"
-    },
-    {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "An instance of the ",
-              "type" : "text"
-            },
-            {
-              "code" : "AsyncIterator",
-              "type" : "codeVoice"
-            },
-            {
-              "text" : " type used to produce",
-              "type" : "text"
-            },
-            {
-              "text" : " ",
-              "type" : "text"
-            },
-            {
-              "text" : "elements of the asynchronous sequence.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -293,18 +205,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator": {
   "abstract" : [
-    {
-      "text" : "The type of asynchronous iterator that produces elements of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -335,18 +236,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/makeAsyncIterator()": {
   "abstract" : [
-    {
-      "text" : "Creates the asynchronous iterator that produces elements of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -364,24 +254,6 @@
     {
       "kind" : "text",
       "text" : "() -> "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC",
-      "text" : "Inotifier"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-      "text" : "PathEvents"
-    },
-    {
-      "kind" : "text",
-      "text" : "."
     },
     {
       "kind" : "typeIdentifier",

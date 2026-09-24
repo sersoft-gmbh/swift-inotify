@@ -1,10 +1,4 @@
 {
-  "abstract" : [
-    {
-      "text" : "The type of element produced by this asynchronous sequence.",
-      "type" : "text"
-    }
-  ],
   "hierarchy" : {
     "paths" : [
       [
@@ -81,26 +75,6 @@
             {
               "kind" : "text",
               "text" : " = "
-            },
-            {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC",
-              "text" : "Inotifier"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
-            },
-            {
-              "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents",
-              "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:7Inotify9InotifierC10PathEventsV",
-              "text" : "PathEvents"
-            },
-            {
-              "kind" : "text",
-              "text" : "."
             },
             {
               "identifier" : "doc:\/\/Inotify\/documentation\/Inotify\/Inotifier\/PathEvents\/AsyncIterator",
@@ -238,18 +212,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/AsyncIterator": {
   "abstract" : [
-    {
-      "text" : "The type of asynchronous iterator that produces elements of this",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
-    {
-      "text" : "asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -311,10 +274,7 @@
 },
 "doc://Inotify/documentation/Inotify/Inotifier/PathEvents/Element": {
   "abstract" : [
-    {
-      "text" : "The type of element produced by this asynchronous sequence.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
